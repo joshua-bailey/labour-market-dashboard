@@ -178,230 +178,73 @@ ul.task-list li input[type="checkbox"] {
 <p>The establishment (CES) survey of payroll employment was not interrupted by the 2025 federal-government shutdown — every series here has continuous monthly data through the latest release. Toggles let you switch between monthly, 3-month, and 6-month moving averages.</p>
 <section id="sectoral-summary" class="level2">
 <h2 class="anchored" data-anchor-id="sectoral-summary">Sectoral summary</h2>
-<p>The latest reading by sector against trailing averages and pre-pandemic norms, with sectoral wage growth alongside (production &amp; nonsupervisory AHE). Indented rows are subcomponents of the row above.</p>
-<div id="tbl-est-summary" class="cell anchored" data-execution_count="2">
-<div class="cell-output cell-output-display" data-execution_count="2">
-<div>
-
-
-<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">Sector</th>
-<th data-quarto-table-cell-role="th">Latest</th>
-<th data-quarto-table-cell-role="th">3m avg</th>
-<th data-quarto-table-cell-role="th">6m avg</th>
-<th data-quarto-table-cell-role="th">2024 avg</th>
-<th data-quarto-table-cell-role="th">2017–19 avg</th>
-<th data-quarto-table-cell-role="th">AHE 3m ann.</th>
-<th data-quarto-table-cell-role="th">AHE YoY</th>
-</tr>
-</thead>
+<p>The latest reading by sector against trailing averages and pre-pandemic norms, with sectoral wage growth alongside (production &amp; nonsupervisory AHE).</p>
+<p>The table is sortable on every column (click any header). Default sort is by the largest absolute change in the latest month so the biggest movers float to the top. Use the <strong>Level</strong> column to sort back into hierarchy: 0 = total nonfarm, 1 = total private / government, 2 = major group (goods / services), 3 = industry, 4 = sub-industry. The search box filters on any field — type “Goods” or “Services” to isolate one tree.</p>
+<div id="tbl-est-summary" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="2">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl quarto-uncaptioned" id="tbl-est-summary-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1
+</figcaption>
+<div aria-describedby="tbl-est-summary-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<!--| quarto-html-table-processing: none -->
+<table id="itables_58ee5e7c_1749_4973_9d37_60ca19f53d8b">
 <tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">0</td>
-<td>Total nonfarm</td>
-<td>+178</td>
-<td>+68</td>
-<td>+15</td>
-<td>+122</td>
-<td>+177</td>
-<td>—</td>
-<td>—</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">1</td>
-<td>Total private</td>
-<td>+186</td>
-<td>+79</td>
-<td>+52</td>
-<td>+85</td>
-<td>+166</td>
-<td>3.1%</td>
-<td>3.4%</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2</td>
-<td>Goods-producing</td>
-<td>+43</td>
-<td>+23</td>
-<td>+9</td>
-<td>-2</td>
-<td>+33</td>
-<td>5.9%</td>
-<td>4.2%</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">3</td>
-<td>Mining &amp; logging</td>
-<td>+2</td>
-<td>-0</td>
-<td>-0</td>
-<td>-1</td>
-<td>+1</td>
-<td>—</td>
-<td>—</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">4</td>
-<td>Construction</td>
-<td>+26</td>
-<td>+19</td>
-<td>+12</td>
-<td>+15</td>
-<td>+20</td>
-<td>5.4%</td>
-<td>5.0%</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">5</td>
-<td>Manufacturing</td>
-<td>+15</td>
-<td>+4</td>
-<td>-4</td>
-<td>-15</td>
-<td>+12</td>
-<td>6.1%</td>
-<td>3.6%</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">6</td>
-<td>Wholesale trade</td>
-<td>+3</td>
-<td>+4</td>
-<td>+0</td>
-<td>-3</td>
-<td>+3</td>
-<td>—</td>
-<td>—</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">7</td>
-<td>Retail trade</td>
-<td>+10</td>
-<td>+5</td>
-<td>-4</td>
-<td>-8</td>
-<td>-7</td>
-<td>—</td>
-<td>—</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">8</td>
-<td>Transport &amp; warehousing</td>
-<td>+21</td>
-<td>-2</td>
-<td>-11</td>
-<td>+9</td>
-<td>+18</td>
-<td>—</td>
-<td>—</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">9</td>
-<td>Utilities</td>
-<td>-1</td>
-<td>+0</td>
-<td>+1</td>
-<td>+1</td>
-<td>-0</td>
-<td>—</td>
-<td>—</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">10</td>
-<td>Information</td>
-<td>-3</td>
-<td>-17</td>
-<td>-11</td>
-<td>-6</td>
-<td>+2</td>
-<td>3.7%</td>
-<td>4.9%</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">11</td>
-<td>Financial activities</td>
-<td>-15</td>
-<td>-17</td>
-<td>-9</td>
-<td>+0</td>
-<td>+13</td>
-<td>4.5%</td>
-<td>4.9%</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">12</td>
-<td>Professional &amp; business</td>
-<td>+2</td>
-<td>+15</td>
-<td>+10</td>
-<td>-9</td>
-<td>+30</td>
-<td>—</td>
-<td>—</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">13</td>
-<td>Education &amp; health</td>
-<td>+91</td>
-<td>+56</td>
-<td>+51</td>
-<td>+84</td>
-<td>+42</td>
-<td>0.9%</td>
-<td>2.0%</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">14</td>
-<td>Leisure &amp; hospitality</td>
-<td>+44</td>
-<td>+13</td>
-<td>+15</td>
-<td>+13</td>
-<td>+27</td>
-<td>3.3%</td>
-<td>4.2%</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">15</td>
-<td>Other services</td>
-<td>-9</td>
-<td>-0</td>
-<td>+3</td>
-<td>+6</td>
-<td>+6</td>
-<td>—</td>
-<td>—</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">16</td>
-<td>Private services</td>
-<td>+143</td>
-<td>+56</td>
-<td>+44</td>
-<td>+87</td>
-<td>+133</td>
-<td>—</td>
-<td>—</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">17</td>
-<td>Government</td>
-<td>-8</td>
-<td>-11</td>
-<td>-38</td>
-<td>+36</td>
-<td>+12</td>
-<td>—</td>
-<td>—</td>
+<tr>
+<td style="vertical-align:middle; text-align:left">
+<p><a href="https://mwouts.github.io/itables/"><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="64" viewbox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;"> <g style="fill:#d9d7fc"> <path d="M100,400H500V357H100Z"></path> <path d="M100,300H400V257H100Z"></path> <path d="M0,200H400V157H0Z"></path> <path d="M100,100H500V57H100Z"></path> <path d="M100,350H500V307H100Z"></path> <path d="M100,250H400V207H100Z"></path> <path d="M0,150H400V107H0Z"></path> <path d="M100,50H500V7H100Z"></path> </g> <g style="fill:#1a1366;stroke:#1a1366;"> <rect x="100" y="7" width="400" height="43"> <animate attributename="width" values="0;400;0" dur="5s" repeatcount="indefinite"></animate> <animate attributename="x" values="100;100;500" dur="5s" repeatcount="indefinite"></animate> </rect> <rect x="0" y="107" width="400" height="43"> <animate attributename="width" values="0;400;0" dur="3.5s" repeatcount="indefinite"></animate> <animate attributename="x" values="0;0;400" dur="3.5s" repeatcount="indefinite"></animate> </rect> <rect x="100" y="207" width="300" height="43"> <animate attributename="width" values="0;300;0" dur="3s" repeatcount="indefinite"></animate> <animate attributename="x" values="100;100;400" dur="3s" repeatcount="indefinite"></animate> </rect> <rect x="100" y="307" width="400" height="43"> <animate attributename="width" values="0;400;0" dur="4s" repeatcount="indefinite"></animate> <animate attributename="x" values="100;100;500" dur="4s" repeatcount="indefinite"></animate> </rect> <g style="fill:transparent;stroke-width:8; stroke-linejoin:round" rx="5"> <g transform="translate(45 50) rotate(-45)"> <circle r="33" cx="0" cy="0"></circle> <rect x="-8" y="32" width="16" height="30"></rect> </g></g></g></svg></a></p><a href="https://mwouts.github.io/itables/">
+<pre><code>        &lt;g transform="translate(450 152)"&gt;
+            &lt;polyline points="-15,-20 -35,-20 -35,40 25,40 25,20" /&gt;
+            &lt;rect x="-15" y="-40" width="60" height="60" /&gt;
+        &lt;/g&gt;
+
+        &lt;g transform="translate(50 352)"&gt;
+            &lt;polygon points="-35,-5 0,-40 35,-5" /&gt;
+            &lt;polygon points="-35,10 0,45 35,10" /&gt;
+        &lt;/g&gt;
+
+        &lt;g transform="translate(75 250)"&gt;
+            &lt;polyline points="-30,30 -60,0 -30,-30" /&gt;
+            &lt;polyline points="0,30 -30,0 0,-30" /&gt;
+        &lt;/g&gt;
+
+        &lt;g transform="translate(425 250) rotate(180)"&gt;
+            &lt;polyline points="-30,30 -60,0 -30,-30" /&gt;
+            &lt;polyline points="0,30 -30,0 0,-30" /&gt;
+        &lt;/g&gt;
+    &lt;/g&gt;
+&lt;/g&gt;</code></pre>
+
+</a> Loading ITables v2.7.3 from the internet… (need <a href="https://mwouts.github.io/itables/troubleshooting.html">help</a>?)
+</td>
 </tr>
 </tbody>
 </table>
+<link href="https://www.unpkg.com/dt_for_itables@2.5.1/dt_bundle.css" rel="stylesheet">
+<script type="module">
+    import { ITable, jQuery as $ } from 'https://www.unpkg.com/dt_for_itables@2.5.1/dt_bundle.js';
 
+    document.querySelectorAll("#itables_58ee5e7c_1749_4973_9d37_60ca19f53d8b:not(.dataTable)").forEach(table => {
+        if (!(table instanceof HTMLTableElement))
+            return;
+
+        let dt_args = {
+          "classes": ["display", "compact"],
+          "columnDefs": [{"className": "dt-right", "render": "$.fn.dataTable.render.number(',', '.', 1, '', '')", "targets": [3, 4, 5, 6, 7]}, {"className": "dt-right", "render": "$.fn.dataTable.render.number(',', '.', 2, '', '%')", "targets": [8, 9]}, {"className": "dt-center", "targets": [0]}],
+          "data_json": "[[0, \"Total\", \"Total nonfarm\", 178.0, 68.33333333333333, 14.833333333333334, 121.58333333333333, 177.38888888888889, \"___NaN___\", \"___NaN___\"], [1, \"Total\", \"\\u00a0\\u00a0\\u00a0\\u00a0Total private\", 186.0, 79.0, 52.5, 85.08333333333333, 165.66666666666666, 3.0503058833435848, 3.3849129593810368], [2, \"Goods\", \"\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0Goods-producing\", 43.0, 22.666666666666668, 8.666666666666666, -1.5833333333333333, 33.083333333333336, 5.928004768470374, 4.220980757293602], [3, \"Goods\", \"\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0Mining &amp; logging\", 2.0, -0.3333333333333333, -0.3333333333333333, -1.3333333333333333, 1.2777777777777777, \"___NaN___\", \"___NaN___\"], [3, \"Goods\", \"\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0Construction\", 26.0, 19.333333333333332, 12.5, 14.666666666666666, 19.694444444444443, 5.3507204484847914, 5.031275496328513], [3, \"Goods\", \"\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0Manufacturing\", 15.0, 3.6666666666666665, -3.5, -14.916666666666666, 12.11111111111111, 6.098799251301101, 3.5615491009681755], [4, \"Goods\", \"\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0Durable goods\", 15.0, 7.333333333333333, 0.8333333333333334, -12.833333333333334, 8.61111111111111, 5.6021817322791545, 3.72184133202742], [4, \"Goods\", \"\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0Nondurable goods\", 0.0, -3.6666666666666665, -4.333333333333333, -2.0833333333333335, 3.5, \"___NaN___\", \"___NaN___\"], [4, \"Goods\", \"\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0Motor vehicles &amp; parts\", 0.6, 0.5999999999999991, -1.3500000000000025, -3.3166666666666664, 0.8416666666666668, \"___NaN___\", \"___NaN___\"], [2, \"Services\", \"\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0Private services\", 143.0, 56.333333333333336, 43.833333333333336, 86.66666666666667, 132.58333333333334, \"___NaN___\", \"___NaN___\"], [3, \"Services\", \"\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0Wholesale trade\", 3.3, 4.033333333333331, 0.4666666666666666, -3.391666666666666, 2.8138888888888887, \"___NaN___\", \"___NaN___\"], [3, \"Services\", \"\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0Retail trade\", 9.7, 4.800000000000035, -4.250000000000015, -7.566666666666666, -7.458333333333335, \"___NaN___\", \"___NaN___\"], [3, \"Services\", \"\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0Transportation &amp; warehousing\", 21.0, -1.6333333333333364, -11.33333333333333, 8.549999999999999, 18.427777777777774, \"___NaN___\", \"___NaN___\"], [3, \"Services\", \"\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0Utilities\", -1.2, 0.16666666666666638, 0.5999999999999998, 0.9249999999999999, -0.24444444444444446, \"___NaN___\", \"___NaN___\"], [3, \"Services\", \"\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0Information\", -3.0, -17.0, -11.333333333333334, -5.666666666666667, 2.0555555555555554, 3.6659830818881467, 4.91186839012927], [3, \"Services\", \"\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0Financial activities\", -15.0, -17.333333333333332, -9.166666666666666, 0.25, 12.555555555555555, 4.463843078032825, 4.852263486039576], [3, \"Services\", \"\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0Professional &amp; business\", 2.0, 15.0, 9.666666666666666, -9.25, 30.36111111111111, \"___NaN___\", \"___NaN___\"], [4, \"Services\", \"\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0Temporary help services\", 4.4, 7.7, 0.4833333333333236, -11.991666666666667, 0.8277777777777777, \"___NaN___\", \"___NaN___\"], [3, \"Services\", \"\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0Education &amp; health\", 91.0, 56.0, 51.0, 84.16666666666667, 41.666666666666664, 0.8501546246880487, 1.9710502001847985], [4, \"Services\", \"\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0Health care &amp; social\", 89.9, 56.333333333333336, 53.05000000000004, 73.55833333333332, 37.93333333333334, \"___NaN___\", \"___NaN___\"], [3, \"Services\", \"\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0Leisure &amp; hospitality\", 44.0, 12.666666666666666, 15.333333333333334, 13.166666666666666, 26.666666666666668, 3.330600196919087, 4.200000000000004], [3, \"Services\", \"\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0\\u00a0Other services\", -9.0, -0.3333333333333333, 2.8333333333333335, 5.5, 5.722222222222222, \"___NaN___\", \"___NaN___\"], [1, \"Government\", \"\\u00a0\\u00a0\\u00a0\\u00a0Government\", -8.0, -10.666666666666666, -37.666666666666664, 36.5, 11.722222222222221, \"___NaN___\", \"___NaN___\"]]",
+          "info": false,
+          "layout": {"bottomEnd": "paging", "bottomStart": "info", "topEnd": "search", "topStart": "pageLength"},
+          "order": [[3, "desc"]],
+          "paging": false,
+          "searching": true,
+          "style": {"font-family": "Georgia, serif", "font-size": "0.92rem", "width": "100%"},
+          "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      \n      <th>Level</th>\n      <th>Group</th>\n      <th>Sector</th>\n      <th>Latest</th>\n      <th>3m avg</th>\n      <th>6m avg</th>\n      <th>2024 avg</th>\n      <th>2017\u201319 avg</th>\n      <th>AHE 3m ann.</th>\n      <th>AHE YoY</th>\n    </tr>\n  </thead></table>",
+          "text_in_header_can_be_selected": true
+        };
+        new ITable(table, dt_args);
+    });
+</script>
 </div>
-</div>
+</figure>
 </div>
 </section>
 <section id="headline-payrolls" class="level2">
@@ -412,23 +255,23 @@ ul.task-list li input[type="checkbox"] {
 <div aria-describedby="fig-est-headline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 
 <style>
-  #altair-viz-1c5c7a731d484e5aab3c3a1e3b08a614.vega-embed {
+  #altair-viz-2b488601e26843859bd59d26bb9ef8e6.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-1c5c7a731d484e5aab3c3a1e3b08a614.vega-embed details,
-  #altair-viz-1c5c7a731d484e5aab3c3a1e3b08a614.vega-embed details summary {
+  #altair-viz-2b488601e26843859bd59d26bb9ef8e6.vega-embed details,
+  #altair-viz-2b488601e26843859bd59d26bb9ef8e6.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-1c5c7a731d484e5aab3c3a1e3b08a614"></div>
+<div id="altair-viz-2b488601e26843859bd59d26bb9ef8e6"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-1c5c7a731d484e5aab3c3a1e3b08a614") {
-      outputDiv = document.getElementById("altair-viz-1c5c7a731d484e5aab3c3a1e3b08a614");
+    if (outputDiv.id !== "altair-viz-2b488601e26843859bd59d26bb9ef8e6") {
+      outputDiv = document.getElementById("altair-viz-2b488601e26843859bd59d26bb9ef8e6");
     }
 
     const paths = {
@@ -494,23 +337,23 @@ Figure&nbsp;1: Monthly change in total nonfarm payrolls. Use the radio to switch
 <div aria-describedby="fig-est-bar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 
 <style>
-  #altair-viz-d080721b93e94428854c6f12a788a92c.vega-embed {
+  #altair-viz-cf24614f66204d039986d78cba905cfa.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-d080721b93e94428854c6f12a788a92c.vega-embed details,
-  #altair-viz-d080721b93e94428854c6f12a788a92c.vega-embed details summary {
+  #altair-viz-cf24614f66204d039986d78cba905cfa.vega-embed details,
+  #altair-viz-cf24614f66204d039986d78cba905cfa.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-d080721b93e94428854c6f12a788a92c"></div>
+<div id="altair-viz-cf24614f66204d039986d78cba905cfa"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-d080721b93e94428854c6f12a788a92c") {
-      outputDiv = document.getElementById("altair-viz-d080721b93e94428854c6f12a788a92c");
+    if (outputDiv.id !== "altair-viz-cf24614f66204d039986d78cba905cfa") {
+      outputDiv = document.getElementById("altair-viz-cf24614f66204d039986d78cba905cfa");
     }
 
     const paths = {
@@ -573,23 +416,23 @@ Figure&nbsp;2: Monthly change by sector since the start of 2024.
 <div aria-describedby="fig-est-cumulative-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 
 <style>
-  #altair-viz-e58b778afae44d2d89be4ce0bbd02e02.vega-embed {
+  #altair-viz-523688fc30e54e4498a7749d30cd486d.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-e58b778afae44d2d89be4ce0bbd02e02.vega-embed details,
-  #altair-viz-e58b778afae44d2d89be4ce0bbd02e02.vega-embed details summary {
+  #altair-viz-523688fc30e54e4498a7749d30cd486d.vega-embed details,
+  #altair-viz-523688fc30e54e4498a7749d30cd486d.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-e58b778afae44d2d89be4ce0bbd02e02"></div>
+<div id="altair-viz-523688fc30e54e4498a7749d30cd486d"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-e58b778afae44d2d89be4ce0bbd02e02") {
-      outputDiv = document.getElementById("altair-viz-e58b778afae44d2d89be4ce0bbd02e02");
+    if (outputDiv.id !== "altair-viz-523688fc30e54e4498a7749d30cd486d") {
+      outputDiv = document.getElementById("altair-viz-523688fc30e54e4498a7749d30cd486d");
     }
 
     const paths = {
@@ -656,23 +499,23 @@ Figure&nbsp;3: Cumulative jobs added since December 2024 by sector.
 <div aria-describedby="fig-est-diffusion-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 
 <style>
-  #altair-viz-a18bccf80f374257a04300d7e139e836.vega-embed {
+  #altair-viz-710ba8e8c98440c9ad3c30dbe29fb398.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-a18bccf80f374257a04300d7e139e836.vega-embed details,
-  #altair-viz-a18bccf80f374257a04300d7e139e836.vega-embed details summary {
+  #altair-viz-710ba8e8c98440c9ad3c30dbe29fb398.vega-embed details,
+  #altair-viz-710ba8e8c98440c9ad3c30dbe29fb398.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-a18bccf80f374257a04300d7e139e836"></div>
+<div id="altair-viz-710ba8e8c98440c9ad3c30dbe29fb398"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-a18bccf80f374257a04300d7e139e836") {
-      outputDiv = document.getElementById("altair-viz-a18bccf80f374257a04300d7e139e836");
+    if (outputDiv.id !== "altair-viz-710ba8e8c98440c9ad3c30dbe29fb398") {
+      outputDiv = document.getElementById("altair-viz-710ba8e8c98440c9ad3c30dbe29fb398");
     }
 
     const paths = {
@@ -739,23 +582,23 @@ Figure&nbsp;4: CES diffusion index — share of tracked industries adding jobs.
 <div aria-describedby="fig-est-share-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 
 <style>
-  #altair-viz-658c75fd482440a3bce31f86a3ff1377.vega-embed {
+  #altair-viz-9e6430ab0eda4c37a6f0194e7ae6d07b.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-658c75fd482440a3bce31f86a3ff1377.vega-embed details,
-  #altair-viz-658c75fd482440a3bce31f86a3ff1377.vega-embed details summary {
+  #altair-viz-9e6430ab0eda4c37a6f0194e7ae6d07b.vega-embed details,
+  #altair-viz-9e6430ab0eda4c37a6f0194e7ae6d07b.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-658c75fd482440a3bce31f86a3ff1377"></div>
+<div id="altair-viz-9e6430ab0eda4c37a6f0194e7ae6d07b"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-658c75fd482440a3bce31f86a3ff1377") {
-      outputDiv = document.getElementById("altair-viz-658c75fd482440a3bce31f86a3ff1377");
+    if (outputDiv.id !== "altair-viz-9e6430ab0eda4c37a6f0194e7ae6d07b") {
+      outputDiv = document.getElementById("altair-viz-9e6430ab0eda4c37a6f0194e7ae6d07b");
     }
 
     const paths = {
@@ -822,23 +665,23 @@ Figure&nbsp;5
 <div aria-describedby="fig-est-bluecollar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 
 <style>
-  #altair-viz-d2ac5983bdb848759aa2118b416ae711.vega-embed {
+  #altair-viz-cedc24318973461f9d3c6f5f139e6056.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-d2ac5983bdb848759aa2118b416ae711.vega-embed details,
-  #altair-viz-d2ac5983bdb848759aa2118b416ae711.vega-embed details summary {
+  #altair-viz-cedc24318973461f9d3c6f5f139e6056.vega-embed details,
+  #altair-viz-cedc24318973461f9d3c6f5f139e6056.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-d2ac5983bdb848759aa2118b416ae711"></div>
+<div id="altair-viz-cedc24318973461f9d3c6f5f139e6056"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-d2ac5983bdb848759aa2118b416ae711") {
-      outputDiv = document.getElementById("altair-viz-d2ac5983bdb848759aa2118b416ae711");
+    if (outputDiv.id !== "altair-viz-cedc24318973461f9d3c6f5f139e6056") {
+      outputDiv = document.getElementById("altair-viz-cedc24318973461f9d3c6f5f139e6056");
     }
 
     const paths = {
@@ -905,23 +748,23 @@ Figure&nbsp;6: Cumulative jobs added since 2022Q4 in five blue-collar industries
 <div aria-describedby="fig-est-tertiles-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 
 <style>
-  #altair-viz-49237f3c480a4beeb98f37c688726ffd.vega-embed {
+  #altair-viz-38e444dfe1804fb3a27139328c411dd0.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-49237f3c480a4beeb98f37c688726ffd.vega-embed details,
-  #altair-viz-49237f3c480a4beeb98f37c688726ffd.vega-embed details summary {
+  #altair-viz-38e444dfe1804fb3a27139328c411dd0.vega-embed details,
+  #altair-viz-38e444dfe1804fb3a27139328c411dd0.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-49237f3c480a4beeb98f37c688726ffd"></div>
+<div id="altair-viz-38e444dfe1804fb3a27139328c411dd0"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-49237f3c480a4beeb98f37c688726ffd") {
-      outputDiv = document.getElementById("altair-viz-49237f3c480a4beeb98f37c688726ffd");
+    if (outputDiv.id !== "altair-viz-38e444dfe1804fb3a27139328c411dd0") {
+      outputDiv = document.getElementById("altair-viz-38e444dfe1804fb3a27139328c411dd0");
     }
 
     const paths = {
