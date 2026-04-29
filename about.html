@@ -179,10 +179,10 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="data-source">Data source</h2>
 <p>All series are pulled from <strong>Haver Analytics</strong>. There is no FRED dependency. Each rebuild fetches every series in a single round-trip and caches the result on disk; if Haver is unreachable, the dashboard rebuilds from the cached CSV.</p>
 <div id="data-meta" class="cell" data-execution_count="2">
-<p><strong>Last data refresh:</strong> 2026-04-29T14:58:21Z<br>
-<strong>Series in catalogue:</strong> 94<br>
+<p><strong>Last data refresh:</strong> 2026-04-29T15:26:07Z<br>
+<strong>Series in catalogue:</strong> 127<br>
 <strong>Bundle range:</strong> 2000-01-01 → 2026-03-01<br>
-<strong>Bundle dimensions:</strong> 315 rows × 627 columns</p>
+<strong>Bundle dimensions:</strong> 315 rows × 819 columns</p>
 </div>
 </section>
 <section id="shutdown-gap-and-interpolation" class="level2">
@@ -190,8 +190,8 @@ ul.task-list li input[type="checkbox"] {
 <p>The September–November 2025 federal-government shutdown caused the BLS to miss the October 2025 release of the Household Survey (CPS). The Establishment Survey (CES) and JOLTS were not interrupted.</p>
 <p>We searched Haver for shutdown-imputed variants of the affected codes (<code>LR</code>, <code>LE</code>, <code>LF</code>, <code>LP</code>, <code>LQ</code>, <code>MLU5</code>, <code>MLU6</code>, <code>FA53</code>, the unemployment-by-duration series, etc.) and <strong>none are published</strong> — the standard codes carry NaN for the missed month. The build pipeline therefore applies pandas time-based linear interpolation across interior gaps only, never extrapolating leading or trailing NaN. The interpolated month is logged in <code>bundle_meta.json</code>.</p>
 <div id="interp-list" class="cell" data-execution_count="3">
-<p><strong>Series interpolated this build:</strong> 33.<br>
-<strong>Months filled:</strong> 2025-10-01.</p>
+<p><strong>Series interpolated this build:</strong> 57.<br>
+<strong>Months filled:</strong> 2025-10-01, 2025-11-01.</p>
 </div>
 </section>
 <section id="series-catalogue" class="level2">
@@ -403,6 +403,81 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left;">LKTPRIVA@USECON</td>
 <td style="text-align: left;">Avg weekly earnings — total private</td>
 <td style="text-align: left;">USD/week</td>
+<td style="text-align: left;">level</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sectoral_wages" class="level3">
+<h3 class="anchored" data-anchor-id="sectoral_wages">Sectoral_Wages</h3>
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 42%">
+<col style="width: 12%">
+<col style="width: 23%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Code</th>
+<th style="text-align: left;">Label</th>
+<th style="text-align: left;">Units</th>
+<th style="text-align: left;">Transform hint</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">LEPRIVA@USECON</td>
+<td style="text-align: left;">AHE P&amp;NS, total private</td>
+<td style="text-align: left;">USD/hour</td>
+<td style="text-align: left;">level</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">LEGOODA@USECON</td>
+<td style="text-align: left;">AHE P&amp;NS, goods-producing</td>
+<td style="text-align: left;">USD/hour</td>
+<td style="text-align: left;">level</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">LECONSA@USECON</td>
+<td style="text-align: left;">AHE P&amp;NS, construction</td>
+<td style="text-align: left;">USD/hour</td>
+<td style="text-align: left;">level</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">LEMANUA@USECON</td>
+<td style="text-align: left;">AHE P&amp;NS, manufacturing</td>
+<td style="text-align: left;">USD/hour</td>
+<td style="text-align: left;">level</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">LEDURGA@USECON</td>
+<td style="text-align: left;">AHE P&amp;NS, durable goods</td>
+<td style="text-align: left;">USD/hour</td>
+<td style="text-align: left;">level</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">LEINFOA@USECON</td>
+<td style="text-align: left;">AHE P&amp;NS, information</td>
+<td style="text-align: left;">USD/hour</td>
+<td style="text-align: left;">level</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">LEFIREA@USECON</td>
+<td style="text-align: left;">AHE P&amp;NS, financial activities</td>
+<td style="text-align: left;">USD/hour</td>
+<td style="text-align: left;">level</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">LEEDUHA@USECON</td>
+<td style="text-align: left;">AHE P&amp;NS, education &amp; health</td>
+<td style="text-align: left;">USD/hour</td>
+<td style="text-align: left;">level</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">LELEIHA@USECON</td>
+<td style="text-align: left;">AHE P&amp;NS, leisure &amp; hospitality</td>
+<td style="text-align: left;">USD/hour</td>
 <td style="text-align: left;">level</td>
 </tr>
 </tbody>
@@ -642,6 +717,192 @@ ul.task-list li input[type="checkbox"] {
 <tr class="even">
 <td style="text-align: left;">LUT27P@USECON</td>
 <td style="text-align: left;">Share unemployed 27+ weeks</td>
+<td style="text-align: left;">percent</td>
+<td style="text-align: left;">rate</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="demographic" class="level3">
+<h3 class="anchored" data-anchor-id="demographic">Demographic</h3>
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 40%">
+<col style="width: 13%">
+<col style="width: 26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Code</th>
+<th style="text-align: left;">Label</th>
+<th style="text-align: left;">Units</th>
+<th style="text-align: left;">Transform hint</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">LR16@USECON</td>
+<td style="text-align: left;">Unrate, 16–19</td>
+<td style="text-align: left;">percent</td>
+<td style="text-align: left;">rate</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">LR200@USECON</td>
+<td style="text-align: left;">Unrate, 20–24</td>
+<td style="text-align: left;">percent</td>
+<td style="text-align: left;">rate</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">LR25A@USECON</td>
+<td style="text-align: left;">Unrate, 25–34</td>
+<td style="text-align: left;">percent</td>
+<td style="text-align: left;">rate</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">LR35@USECON</td>
+<td style="text-align: left;">Unrate, 35–44</td>
+<td style="text-align: left;">percent</td>
+<td style="text-align: left;">rate</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">LR45@USECON</td>
+<td style="text-align: left;">Unrate, 45–54</td>
+<td style="text-align: left;">percent</td>
+<td style="text-align: left;">rate</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RA55@EMPL</td>
+<td style="text-align: left;">Unrate, 55+</td>
+<td style="text-align: left;">percent</td>
+<td style="text-align: left;">rate</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RA25@EMPL</td>
+<td style="text-align: left;">Unrate, 25+</td>
+<td style="text-align: left;">percent</td>
+<td style="text-align: left;">rate</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">LRW@USECON</td>
+<td style="text-align: left;">Unrate, White</td>
+<td style="text-align: left;">percent</td>
+<td style="text-align: left;">rate</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">LRB@USECON</td>
+<td style="text-align: left;">Unrate, Black</td>
+<td style="text-align: left;">percent</td>
+<td style="text-align: left;">rate</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">LRH@USECON</td>
+<td style="text-align: left;">Unrate, Hispanic</td>
+<td style="text-align: left;">percent</td>
+<td style="text-align: left;">rate</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">LRAS@USECON</td>
+<td style="text-align: left;">Unrate, Asian</td>
+<td style="text-align: left;">percent</td>
+<td style="text-align: left;">rate</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RAL25@EMPL</td>
+<td style="text-align: left;">Unrate, less than HS</td>
+<td style="text-align: left;">percent</td>
+<td style="text-align: left;">rate</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RAH25@EMPL</td>
+<td style="text-align: left;">Unrate, HS only</td>
+<td style="text-align: left;">percent</td>
+<td style="text-align: left;">rate</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RAS25@EMPL</td>
+<td style="text-align: left;">Unrate, some college</td>
+<td style="text-align: left;">percent</td>
+<td style="text-align: left;">rate</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RAB25@EMPL</td>
+<td style="text-align: left;">Unrate, BA+</td>
+<td style="text-align: left;">percent</td>
+<td style="text-align: left;">rate</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RN16N@EMPL</td>
+<td style="text-align: left;">Unrate, native-born (NSA)</td>
+<td style="text-align: left;">percent</td>
+<td style="text-align: left;">rate</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RN16R@EMPL</td>
+<td style="text-align: left;">Unrate, foreign-born (NSA)</td>
+<td style="text-align: left;">percent</td>
+<td style="text-align: left;">rate</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="flows" class="level3">
+<h3 class="anchored" data-anchor-id="flows">Flows</h3>
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 33%">
+<col style="width: 16%">
+<col style="width: 26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Code</th>
+<th style="text-align: left;">Label</th>
+<th style="text-align: left;">Units</th>
+<th style="text-align: left;">Transform hint</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">ES16@EMPL</td>
+<td style="text-align: left;">Employed → Unemployed</td>
+<td style="text-align: left;">thousands</td>
+<td style="text-align: left;">level</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">BS16@EMPL</td>
+<td style="text-align: left;">Unemployed → Employed</td>
+<td style="text-align: left;">thousands</td>
+<td style="text-align: left;">level</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GS16@EMPL</td>
+<td style="text-align: left;">NILF → Unemployed</td>
+<td style="text-align: left;">thousands</td>
+<td style="text-align: left;">level</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">JS16@EMPL</td>
+<td style="text-align: left;">Unemployed → NILF</td>
+<td style="text-align: left;">thousands</td>
+<td style="text-align: left;">level</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">IS16@EMPL</td>
+<td style="text-align: left;">Employed → NILF</td>
+<td style="text-align: left;">thousands</td>
+<td style="text-align: left;">level</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">CS16@EMPL</td>
+<td style="text-align: left;">NILF → Employed</td>
+<td style="text-align: left;">thousands</td>
+<td style="text-align: left;">level</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">LEFINDR@USECON</td>
+<td style="text-align: left;">Job-finding rate</td>
 <td style="text-align: left;">percent</td>
 <td style="text-align: left;">rate</td>
 </tr>
