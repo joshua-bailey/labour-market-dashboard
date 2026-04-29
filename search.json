@@ -1,0 +1,226 @@
+[
+  {
+    "objectID": "raw-data.html",
+    "href": "raw-data.html",
+    "title": "Raw data",
+    "section": "",
+    "text": "Tip\n\n\n\nEach table below shows the latest value with the underlying Haver code. Use the link at the top of each section to download the full series as CSV.\nEstablishment Survey (CES)\nDownload establishment.csv\n\n\n\n\n\n\n\n\n\n\nSeries\nHaver code\nLatest\nDate\nUnits\n\n\n\n\nTotal nonfarm\nLANAGRD@USECON\n178\nMar 2026\nthousands\n\n\nTotal nonfarm (YoY %)\nLANAGRA@USECON\n158637\nMar 2026\npercent\n\n\nTotal private\nLAPRIVD@USECON\n186\nMar 2026\nthousands\n\n\nGoods-producing\nLAGOODD@USECON\n43\nMar 2026\nthousands\n\n\nConstruction\nLACONSD@USECON\n26\nMar 2026\nthousands\n\n\nManufacturing\nLAMANUD@USECON\n15\nMar 2026\nthousands\n\n\nMotor vehicles & parts\nLAMVPD@USECON\n0.6\nMar 2026\nthousands\n\n\nPrivate service-providing\nLAPSRVD@USECON\n143\nMar 2026\nthousands\n\n\nRetail trade\nLARTRDD@USECON\n9.7\nMar 2026\nthousands\n\n\nProfessional & business services\nLAPBSVD@USECON\n2\nMar 2026\nthousands\n\n\nEducation & health services\nLAEDUHD@USECON\n91\nMar 2026\nthousands\n\n\nHealth care & social assistance\nLAHLTHD@USECON\n89.9\nMar 2026\nthousands\n\n\nLeisure & hospitality\nLALEIHD@USECON\n44\nMar 2026\nthousands\n\n\nGovernment\nLAGOVTD@USECON\n-8\nMar 2026\nthousands\n\n\nMining & logging\nLANTRMD@USECON\n2\nMar 2026\nthousands\n\n\nWholesale trade\nLAWTRDD@USECON\n3.3\nMar 2026\nthousands\n\n\nTransportation & warehousing\nLATRAND@USECON\n21\nMar 2026\nthousands\n\n\nUtilities\nLAUTILD@USECON\n-1.2\nMar 2026\nthousands\n\n\nInformation\nLAINFOD@USECON\n-3\nMar 2026\nthousands\n\n\nFinancial activities\nLAFIRED@USECON\n-15\nMar 2026\nthousands\n\n\nOther services\nLASRVOD@USECON\n-9\nMar 2026\nthousands\n\n\nDurable goods manufacturing\nLADURGD@USECON\n15\nMar 2026\nthousands\n\n\nNondurable goods manufacturing\nLANDURD@USECON\n0\nMar 2026\nthousands\n\n\nTemporary help services\nLAR132D@USECON\n4.4\nMar 2026\nthousands\n\n\n\n\n\nWage measures\nDownload wages.csv\n\n\n\n\n\n\n\n\n\n\nSeries\nHaver code\nLatest\nDate\nUnits\n\n\n\n\nAvg hourly earnings — total private\nLETPRIVA@USECON\n37.38\nMar 2026\nUSD/hour\n\n\nAvg hourly earnings — production & nonsupervisory\nLEPRIVA@USECON\n32.07\nMar 2026\nUSD/hour\n\n\nAvg weekly hours — total private\nLRTPRIVA@USECON\n34.2\nMar 2026\nhours\n\n\nAvg weekly earnings — total private\nLKTPRIVA@USECON\n1278.4\nMar 2026\nUSD/week\n\n\n\n\n\nHousehold Survey (CPS)\nDownload household.csv\n\n\n\n\n\n\n\n\n\n\nSeries\nHaver code\nLatest\nDate\nUnits\n\n\n\n\nCivilian employment\nLE@USECON\n162848\nMar 2026\nthousands\n\n\nLabor force\nLF@USECON\n170087\nMar 2026\nthousands\n\n\nUnemployment rate\nLR@USECON\n4.3\nMar 2026\npercent\n\n\nUnemployment rate, 25+\nLRT25@USECON\n3.6\nMar 2026\npercent\n\n\nU-5 unemployment rate\nMLU5@USECON\n5.3\nMar 2026\npercent\n\n\nU-6 unemployment rate\nMLU6@USECON\n8\nMar 2026\npercent\n\n\nLabor force participation rate\nLP@USECON\n61.9\nMar 2026\npercent\n\n\nEmployment-to-population ratio\nLQ@USECON\n59.2\nMar 2026\npercent\n\n\nTotal unemployment\nLTU@USECON\n7239\nMar 2026\nthousands\n\n\nPart-time for economic reasons\nLEPTE@USECON\n4497\nMar 2026\nthousands\n\n\nPart-time for non-economic reasons\nLEPTV@USECON\n22767\nMar 2026\nthousands\n\n\nJob losers on temporary layoff\nLUJLL@USECON\n877\nMar 2026\nthousands\n\n\nPermanent job losers\nLUJLPM@USECON\n1881\nMar 2026\nthousands\n\n\nNot at work due to bad weather\nLHWNDN@USECON\n468\nMar 2026\nthousands\n\n\nNot at work — other\nLHWSAN@USECON\n1809\nMar 2026\nthousands\n\n\nLFPR, prime age (25–54)\nFA53@USECON\n83.8\nMar 2026\npercent\n\n\nLFPR, prime age men (25–54)\nFA53M@USECON\n89.4\nMar 2026\npercent\n\n\nLFPR, prime age women (25–54)\nFA53F@USECON\n78.5\nMar 2026\npercent\n\n\nEPOP, prime age (25–54)\nQA53@EMPL\n80.7\nMar 2026\npercent\n\n\nJob losers (total)\nLUJL@USECON\n3403\nMar 2026\nthousands\n\n\nJob leavers\nLUJLV@USECON\n898\nMar 2026\nthousands\n\n\nNew entrants\nLUNE@USECON\n714\nMar 2026\nthousands\n\n\nReentrants\nLURE@USECON\n2254\nMar 2026\nthousands\n\n\n\n\n\nUnemployment by duration\nDownload duration.csv\n\n\n\n\n\n\n\n\n\n\nSeries\nHaver code\nLatest\nDate\nUnits\n\n\n\n\nUnemployed 0–4 weeks\nLU0@USECON\n2138\nMar 2026\nthousands\n\n\nUnemployed 5–14 weeks\nLU5@USECON\n1998\nMar 2026\nthousands\n\n\nUnemployed 15–26 weeks\nLU15@USECON\n1212\nMar 2026\nthousands\n\n\nUnemployed 15+ weeks\nLUT15@USECON\n3033\nMar 2026\nthousands\n\n\nUnemployed 27+ weeks\nLUT27@USECON\n1821\nMar 2026\nthousands\n\n\nShare unemployed 0–4 weeks\nLU0P@USECON\n29.8\nMar 2026\npercent\n\n\nShare unemployed 5–14 weeks\nLU5P@USECON\n27.9\nMar 2026\npercent\n\n\nShare unemployed 15–26 weeks\nLU15P@USECON\n16.9\nMar 2026\npercent\n\n\nShare unemployed 15+ weeks\nLUT15P@USECON\n42.3\nMar 2026\npercent\n\n\nShare unemployed 27+ weeks\nLUT27P@USECON\n25.4\nMar 2026\npercent\n\n\n\n\n\nJOLTS\nDownload jolts.csv\n\n\n\n\n\n\n\n\n\n\nSeries\nHaver code\nLatest\nDate\nUnits\n\n\n\n\nJob openings — total (level)\nLJJTLA@USECON\n6882\nFeb 2026\nthousands\n\n\nJob openings — total (rate)\nLJJTPA@USECON\n4.2\nFeb 2026\npercent\n\n\nHires — total (level)\nLJHTLA@USECON\n4849\nFeb 2026\nthousands\n\n\nHires — total (rate)\nLJHTPA@USECON\n3.1\nFeb 2026\npercent\n\n\nSeparations — total (level)\nLJSTLA@USECON\n4971\nFeb 2026\nthousands\n\n\nSeparations — total (rate)\nLJSTPA@USECON\n3.1\nFeb 2026\npercent\n\n\nQuits — total (level)\nLJQTLA@USECON\n2974\nFeb 2026\nthousands\n\n\nQuits — total (rate)\nLJQTPA@USECON\n1.9\nFeb 2026\npercent\n\n\nLayoffs & discharges — total (level)\nLJLTLA@USECON\n1721\nFeb 2026\nthousands\n\n\nLayoffs & discharges — total (rate)\nLJLTPA@USECON\n1.1\nFeb 2026\npercent\n\n\nJob openings — construction\nLJJCNLA@USECON\n202\nFeb 2026\nthousands\n\n\nJob openings — manufacturing\nLJJMNLA@USECON\n439\nFeb 2026\nthousands\n\n\nJob openings — retail trade\nLJJRTLA@USECON\n701\nFeb 2026\nthousands\n\n\nJob openings — professional & business\nLJJPBLA@USECON\n1260\nFeb 2026\nthousands\n\n\nJob openings — education & health\nLJJEHLA@USECON\n1375\nFeb 2026\nthousands\n\n\nJob openings — health care & social\nLJJHCLA@USECON\n1279\nFeb 2026\nthousands\n\n\nJob openings — leisure & hospitality\nLJJLHLA@USECON\n906\nFeb 2026\nthousands\n\n\nJob openings — arts, entertainment, recreation\nLJJRCLA@USECON\n126\nFeb 2026\nthousands\n\n\nJob openings — accommodation & food\nLJJAFLA@USECON\n780\nFeb 2026\nthousands\n\n\nJob openings — government\nLJJGLA@USECON\n701\nFeb 2026\nthousands\n\n\nJob openings — state & local government\nLJJGSLA@USECON\n612\nFeb 2026\nthousands\n\n\nQuits rate — total private\nLJQTPPA@USECON\n2.1\nFeb 2026\npercent\n\n\nQuits rate — construction\nLJQCNPA@USECON\n1.5\nFeb 2026\npercent\n\n\nQuits rate — manufacturing\nLJQMNPA@USECON\n1.4\nFeb 2026\npercent\n\n\nQuits rate — retail trade\nLJQRTPA@USECON\n2.8\nFeb 2026\npercent\n\n\nQuits rate — information\nLJQINPA@USECON\n1.5\nFeb 2026\npercent\n\n\nQuits rate — financial activities\nLJQFIPA@USECON\n1.1\nFeb 2026\npercent\n\n\nQuits rate — professional & business\nLJQPBPA@USECON\n2.1\nFeb 2026\npercent\n\n\nQuits rate — private education & health\nLJQEHPA@USECON\n1.7\nFeb 2026\npercent\n\n\nQuits rate — health care & social\nLJQHCPA@USECON\n1.8\nFeb 2026\npercent\n\n\nQuits rate — leisure & hospitality\nLJQLHPA@USECON\n3.7\nFeb 2026\npercent\n\n\nQuits rate — accommodation & food\nLJQAFPA@USECON\n3.9\nFeb 2026\npercent\n\n\nQuits rate — government\nLJQGPA@USECON\n0.8\nFeb 2026\npercent"
+  },
+  {
+    "objectID": "raw-data.html#establishment-survey-ces",
+    "href": "raw-data.html#establishment-survey-ces",
+    "title": "Raw data",
+    "section": "Establishment Survey (CES)",
+    "text": "Establishment Survey (CES)\nDownload establishment.csv\n\n\n\n\n\n\n\n\n\n\nSeries\nHaver code\nLatest\nDate\nUnits\n\n\n\n\nTotal nonfarm\nLANAGRD@USECON\n178\nMar 2026\nthousands\n\n\nTotal nonfarm (YoY %)\nLANAGRA@USECON\n158637\nMar 2026\npercent\n\n\nTotal private\nLAPRIVD@USECON\n186\nMar 2026\nthousands\n\n\nGoods-producing\nLAGOODD@USECON\n43\nMar 2026\nthousands\n\n\nConstruction\nLACONSD@USECON\n26\nMar 2026\nthousands\n\n\nManufacturing\nLAMANUD@USECON\n15\nMar 2026\nthousands\n\n\nMotor vehicles & parts\nLAMVPD@USECON\n0.6\nMar 2026\nthousands\n\n\nPrivate service-providing\nLAPSRVD@USECON\n143\nMar 2026\nthousands\n\n\nRetail trade\nLARTRDD@USECON\n9.7\nMar 2026\nthousands\n\n\nProfessional & business services\nLAPBSVD@USECON\n2\nMar 2026\nthousands\n\n\nEducation & health services\nLAEDUHD@USECON\n91\nMar 2026\nthousands\n\n\nHealth care & social assistance\nLAHLTHD@USECON\n89.9\nMar 2026\nthousands\n\n\nLeisure & hospitality\nLALEIHD@USECON\n44\nMar 2026\nthousands\n\n\nGovernment\nLAGOVTD@USECON\n-8\nMar 2026\nthousands\n\n\nMining & logging\nLANTRMD@USECON\n2\nMar 2026\nthousands\n\n\nWholesale trade\nLAWTRDD@USECON\n3.3\nMar 2026\nthousands\n\n\nTransportation & warehousing\nLATRAND@USECON\n21\nMar 2026\nthousands\n\n\nUtilities\nLAUTILD@USECON\n-1.2\nMar 2026\nthousands\n\n\nInformation\nLAINFOD@USECON\n-3\nMar 2026\nthousands\n\n\nFinancial activities\nLAFIRED@USECON\n-15\nMar 2026\nthousands\n\n\nOther services\nLASRVOD@USECON\n-9\nMar 2026\nthousands\n\n\nDurable goods manufacturing\nLADURGD@USECON\n15\nMar 2026\nthousands\n\n\nNondurable goods manufacturing\nLANDURD@USECON\n0\nMar 2026\nthousands\n\n\nTemporary help services\nLAR132D@USECON\n4.4\nMar 2026\nthousands"
+  },
+  {
+    "objectID": "raw-data.html#wage-measures",
+    "href": "raw-data.html#wage-measures",
+    "title": "Raw data",
+    "section": "Wage measures",
+    "text": "Wage measures\nDownload wages.csv\n\n\n\n\n\n\n\n\n\n\nSeries\nHaver code\nLatest\nDate\nUnits\n\n\n\n\nAvg hourly earnings — total private\nLETPRIVA@USECON\n37.38\nMar 2026\nUSD/hour\n\n\nAvg hourly earnings — production & nonsupervisory\nLEPRIVA@USECON\n32.07\nMar 2026\nUSD/hour\n\n\nAvg weekly hours — total private\nLRTPRIVA@USECON\n34.2\nMar 2026\nhours\n\n\nAvg weekly earnings — total private\nLKTPRIVA@USECON\n1278.4\nMar 2026\nUSD/week"
+  },
+  {
+    "objectID": "raw-data.html#household-survey-cps",
+    "href": "raw-data.html#household-survey-cps",
+    "title": "Raw data",
+    "section": "Household Survey (CPS)",
+    "text": "Household Survey (CPS)\nDownload household.csv\n\n\n\n\n\n\n\n\n\n\nSeries\nHaver code\nLatest\nDate\nUnits\n\n\n\n\nCivilian employment\nLE@USECON\n162848\nMar 2026\nthousands\n\n\nLabor force\nLF@USECON\n170087\nMar 2026\nthousands\n\n\nUnemployment rate\nLR@USECON\n4.3\nMar 2026\npercent\n\n\nUnemployment rate, 25+\nLRT25@USECON\n3.6\nMar 2026\npercent\n\n\nU-5 unemployment rate\nMLU5@USECON\n5.3\nMar 2026\npercent\n\n\nU-6 unemployment rate\nMLU6@USECON\n8\nMar 2026\npercent\n\n\nLabor force participation rate\nLP@USECON\n61.9\nMar 2026\npercent\n\n\nEmployment-to-population ratio\nLQ@USECON\n59.2\nMar 2026\npercent\n\n\nTotal unemployment\nLTU@USECON\n7239\nMar 2026\nthousands\n\n\nPart-time for economic reasons\nLEPTE@USECON\n4497\nMar 2026\nthousands\n\n\nPart-time for non-economic reasons\nLEPTV@USECON\n22767\nMar 2026\nthousands\n\n\nJob losers on temporary layoff\nLUJLL@USECON\n877\nMar 2026\nthousands\n\n\nPermanent job losers\nLUJLPM@USECON\n1881\nMar 2026\nthousands\n\n\nNot at work due to bad weather\nLHWNDN@USECON\n468\nMar 2026\nthousands\n\n\nNot at work — other\nLHWSAN@USECON\n1809\nMar 2026\nthousands\n\n\nLFPR, prime age (25–54)\nFA53@USECON\n83.8\nMar 2026\npercent\n\n\nLFPR, prime age men (25–54)\nFA53M@USECON\n89.4\nMar 2026\npercent\n\n\nLFPR, prime age women (25–54)\nFA53F@USECON\n78.5\nMar 2026\npercent\n\n\nEPOP, prime age (25–54)\nQA53@EMPL\n80.7\nMar 2026\npercent\n\n\nJob losers (total)\nLUJL@USECON\n3403\nMar 2026\nthousands\n\n\nJob leavers\nLUJLV@USECON\n898\nMar 2026\nthousands\n\n\nNew entrants\nLUNE@USECON\n714\nMar 2026\nthousands\n\n\nReentrants\nLURE@USECON\n2254\nMar 2026\nthousands"
+  },
+  {
+    "objectID": "raw-data.html#unemployment-by-duration",
+    "href": "raw-data.html#unemployment-by-duration",
+    "title": "Raw data",
+    "section": "Unemployment by duration",
+    "text": "Unemployment by duration\nDownload duration.csv\n\n\n\n\n\n\n\n\n\n\nSeries\nHaver code\nLatest\nDate\nUnits\n\n\n\n\nUnemployed 0–4 weeks\nLU0@USECON\n2138\nMar 2026\nthousands\n\n\nUnemployed 5–14 weeks\nLU5@USECON\n1998\nMar 2026\nthousands\n\n\nUnemployed 15–26 weeks\nLU15@USECON\n1212\nMar 2026\nthousands\n\n\nUnemployed 15+ weeks\nLUT15@USECON\n3033\nMar 2026\nthousands\n\n\nUnemployed 27+ weeks\nLUT27@USECON\n1821\nMar 2026\nthousands\n\n\nShare unemployed 0–4 weeks\nLU0P@USECON\n29.8\nMar 2026\npercent\n\n\nShare unemployed 5–14 weeks\nLU5P@USECON\n27.9\nMar 2026\npercent\n\n\nShare unemployed 15–26 weeks\nLU15P@USECON\n16.9\nMar 2026\npercent\n\n\nShare unemployed 15+ weeks\nLUT15P@USECON\n42.3\nMar 2026\npercent\n\n\nShare unemployed 27+ weeks\nLUT27P@USECON\n25.4\nMar 2026\npercent"
+  },
+  {
+    "objectID": "raw-data.html#jolts",
+    "href": "raw-data.html#jolts",
+    "title": "Raw data",
+    "section": "JOLTS",
+    "text": "JOLTS\nDownload jolts.csv\n\n\n\n\n\n\n\n\n\n\nSeries\nHaver code\nLatest\nDate\nUnits\n\n\n\n\nJob openings — total (level)\nLJJTLA@USECON\n6882\nFeb 2026\nthousands\n\n\nJob openings — total (rate)\nLJJTPA@USECON\n4.2\nFeb 2026\npercent\n\n\nHires — total (level)\nLJHTLA@USECON\n4849\nFeb 2026\nthousands\n\n\nHires — total (rate)\nLJHTPA@USECON\n3.1\nFeb 2026\npercent\n\n\nSeparations — total (level)\nLJSTLA@USECON\n4971\nFeb 2026\nthousands\n\n\nSeparations — total (rate)\nLJSTPA@USECON\n3.1\nFeb 2026\npercent\n\n\nQuits — total (level)\nLJQTLA@USECON\n2974\nFeb 2026\nthousands\n\n\nQuits — total (rate)\nLJQTPA@USECON\n1.9\nFeb 2026\npercent\n\n\nLayoffs & discharges — total (level)\nLJLTLA@USECON\n1721\nFeb 2026\nthousands\n\n\nLayoffs & discharges — total (rate)\nLJLTPA@USECON\n1.1\nFeb 2026\npercent\n\n\nJob openings — construction\nLJJCNLA@USECON\n202\nFeb 2026\nthousands\n\n\nJob openings — manufacturing\nLJJMNLA@USECON\n439\nFeb 2026\nthousands\n\n\nJob openings — retail trade\nLJJRTLA@USECON\n701\nFeb 2026\nthousands\n\n\nJob openings — professional & business\nLJJPBLA@USECON\n1260\nFeb 2026\nthousands\n\n\nJob openings — education & health\nLJJEHLA@USECON\n1375\nFeb 2026\nthousands\n\n\nJob openings — health care & social\nLJJHCLA@USECON\n1279\nFeb 2026\nthousands\n\n\nJob openings — leisure & hospitality\nLJJLHLA@USECON\n906\nFeb 2026\nthousands\n\n\nJob openings — arts, entertainment, recreation\nLJJRCLA@USECON\n126\nFeb 2026\nthousands\n\n\nJob openings — accommodation & food\nLJJAFLA@USECON\n780\nFeb 2026\nthousands\n\n\nJob openings — government\nLJJGLA@USECON\n701\nFeb 2026\nthousands\n\n\nJob openings — state & local government\nLJJGSLA@USECON\n612\nFeb 2026\nthousands\n\n\nQuits rate — total private\nLJQTPPA@USECON\n2.1\nFeb 2026\npercent\n\n\nQuits rate — construction\nLJQCNPA@USECON\n1.5\nFeb 2026\npercent\n\n\nQuits rate — manufacturing\nLJQMNPA@USECON\n1.4\nFeb 2026\npercent\n\n\nQuits rate — retail trade\nLJQRTPA@USECON\n2.8\nFeb 2026\npercent\n\n\nQuits rate — information\nLJQINPA@USECON\n1.5\nFeb 2026\npercent\n\n\nQuits rate — financial activities\nLJQFIPA@USECON\n1.1\nFeb 2026\npercent\n\n\nQuits rate — professional & business\nLJQPBPA@USECON\n2.1\nFeb 2026\npercent\n\n\nQuits rate — private education & health\nLJQEHPA@USECON\n1.7\nFeb 2026\npercent\n\n\nQuits rate — health care & social\nLJQHCPA@USECON\n1.8\nFeb 2026\npercent\n\n\nQuits rate — leisure & hospitality\nLJQLHPA@USECON\n3.7\nFeb 2026\npercent\n\n\nQuits rate — accommodation & food\nLJQAFPA@USECON\n3.9\nFeb 2026\npercent\n\n\nQuits rate — government\nLJQGPA@USECON\n0.8\nFeb 2026\npercent"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "A standing read of the three monthly U.S. labour-market releases — Establishment Survey (CES), Household Survey (CPS), and JOLTS — that updates each release with the same set of charts, tables, and analytical framings. The aim is to put the same headline numbers, the same sectoral breakdowns, the same alternative measures, and the same diffusion / Sahm / V-U / quits-by-industry views in front of you on jobs-Friday morning. Year to year and across cycles you can compare the same picture."
+  },
+  {
+    "objectID": "about.html#what-this-dashboard-is",
+    "href": "about.html#what-this-dashboard-is",
+    "title": "About",
+    "section": "",
+    "text": "A standing read of the three monthly U.S. labour-market releases — Establishment Survey (CES), Household Survey (CPS), and JOLTS — that updates each release with the same set of charts, tables, and analytical framings. The aim is to put the same headline numbers, the same sectoral breakdowns, the same alternative measures, and the same diffusion / Sahm / V-U / quits-by-industry views in front of you on jobs-Friday morning. Year to year and across cycles you can compare the same picture."
+  },
+  {
+    "objectID": "about.html#data-source",
+    "href": "about.html#data-source",
+    "title": "About",
+    "section": "Data source",
+    "text": "Data source\nAll series are pulled from Haver Analytics. There is no FRED dependency. Each rebuild fetches every series in a single round-trip and caches the result on disk; if Haver is unreachable, the dashboard rebuilds from the cached CSV.\n\nLast data refresh: 2026-04-29T14:58:21Z\nSeries in catalogue: 94\nBundle range: 2000-01-01 → 2026-03-01\nBundle dimensions: 315 rows × 627 columns"
+  },
+  {
+    "objectID": "about.html#shutdown-gap-and-interpolation",
+    "href": "about.html#shutdown-gap-and-interpolation",
+    "title": "About",
+    "section": "Shutdown gap and interpolation",
+    "text": "Shutdown gap and interpolation\nThe September–November 2025 federal-government shutdown caused the BLS to miss the October 2025 release of the Household Survey (CPS). The Establishment Survey (CES) and JOLTS were not interrupted.\nWe searched Haver for shutdown-imputed variants of the affected codes (LR, LE, LF, LP, LQ, MLU5, MLU6, FA53, the unemployment-by-duration series, etc.) and none are published — the standard codes carry NaN for the missed month. The build pipeline therefore applies pandas time-based linear interpolation across interior gaps only, never extrapolating leading or trailing NaN. The interpolated month is logged in bundle_meta.json.\n\nSeries interpolated this build: 33.\nMonths filled: 2025-10-01."
+  },
+  {
+    "objectID": "about.html#series-catalogue",
+    "href": "about.html#series-catalogue",
+    "title": "About",
+    "section": "Series catalogue",
+    "text": "Series catalogue\nEvery Haver code currently in the build, grouped by survey:\n\n\nEstablishment\n\n\n\n\n\n\n\n\n\nCode\nLabel\nUnits\nTransform hint\n\n\n\n\nLANAGRD@USECON\nTotal nonfarm\nthousands\ndiff\n\n\nLANAGRA@USECON\nTotal nonfarm (YoY %)\npercent\nyoy_pct\n\n\nLAPRIVD@USECON\nTotal private\nthousands\ndiff\n\n\nLAGOODD@USECON\nGoods-producing\nthousands\ndiff\n\n\nLACONSD@USECON\nConstruction\nthousands\ndiff\n\n\nLAMANUD@USECON\nManufacturing\nthousands\ndiff\n\n\nLAMVPD@USECON\nMotor vehicles & parts\nthousands\ndiff\n\n\nLAPSRVD@USECON\nPrivate service-providing\nthousands\ndiff\n\n\nLARTRDD@USECON\nRetail trade\nthousands\ndiff\n\n\nLAPBSVD@USECON\nProfessional & business services\nthousands\ndiff\n\n\nLAEDUHD@USECON\nEducation & health services\nthousands\ndiff\n\n\nLAHLTHD@USECON\nHealth care & social assistance\nthousands\ndiff\n\n\nLALEIHD@USECON\nLeisure & hospitality\nthousands\ndiff\n\n\nLAGOVTD@USECON\nGovernment\nthousands\ndiff\n\n\nLANTRMD@USECON\nMining & logging\nthousands\ndiff\n\n\nLAWTRDD@USECON\nWholesale trade\nthousands\ndiff\n\n\nLATRAND@USECON\nTransportation & warehousing\nthousands\ndiff\n\n\nLAUTILD@USECON\nUtilities\nthousands\ndiff\n\n\nLAINFOD@USECON\nInformation\nthousands\ndiff\n\n\nLAFIRED@USECON\nFinancial activities\nthousands\ndiff\n\n\nLASRVOD@USECON\nOther services\nthousands\ndiff\n\n\nLADURGD@USECON\nDurable goods manufacturing\nthousands\ndiff\n\n\nLANDURD@USECON\nNondurable goods manufacturing\nthousands\ndiff\n\n\nLAR132D@USECON\nTemporary help services\nthousands\ndiff\n\n\n\n\n\nWages\n\n\n\n\n\n\n\n\n\nCode\nLabel\nUnits\nTransform hint\n\n\n\n\nLETPRIVA@USECON\nAvg hourly earnings — total private\nUSD/hour\nlevel\n\n\nLEPRIVA@USECON\nAvg hourly earnings — production & nonsupervisory\nUSD/hour\nlevel\n\n\nLRTPRIVA@USECON\nAvg weekly hours — total private\nhours\nlevel\n\n\nLKTPRIVA@USECON\nAvg weekly earnings — total private\nUSD/week\nlevel\n\n\n\n\n\nHousehold\n\n\n\n\n\n\n\n\n\nCode\nLabel\nUnits\nTransform hint\n\n\n\n\nLE@USECON\nCivilian employment\nthousands\ndiff\n\n\nLF@USECON\nLabor force\nthousands\ndiff\n\n\nLR@USECON\nUnemployment rate\npercent\nrate\n\n\nLRT25@USECON\nUnemployment rate, 25+\npercent\nrate\n\n\nMLU5@USECON\nU-5 unemployment rate\npercent\nrate\n\n\nMLU6@USECON\nU-6 unemployment rate\npercent\nrate\n\n\nLP@USECON\nLabor force participation rate\npercent\nrate\n\n\nLQ@USECON\nEmployment-to-population ratio\npercent\nrate\n\n\nLTU@USECON\nTotal unemployment\nthousands\nlevel\n\n\nLEPTE@USECON\nPart-time for economic reasons\nthousands\nlevel\n\n\nLEPTV@USECON\nPart-time for non-economic reasons\nthousands\nlevel\n\n\nLUJLL@USECON\nJob losers on temporary layoff\nthousands\nlevel\n\n\nLUJLPM@USECON\nPermanent job losers\nthousands\nlevel\n\n\nLHWNDN@USECON\nNot at work due to bad weather\nthousands\nlevel\n\n\nLHWSAN@USECON\nNot at work — other\nthousands\nlevel\n\n\nFA53@USECON\nLFPR, prime age (25–54)\npercent\nrate\n\n\nFA53M@USECON\nLFPR, prime age men (25–54)\npercent\nrate\n\n\nFA53F@USECON\nLFPR, prime age women (25–54)\npercent\nrate\n\n\nQA53@EMPL\nEPOP, prime age (25–54)\npercent\nrate\n\n\nLUJL@USECON\nJob losers (total)\nthousands\nlevel\n\n\nLUJLV@USECON\nJob leavers\nthousands\nlevel\n\n\nLUNE@USECON\nNew entrants\nthousands\nlevel\n\n\nLURE@USECON\nReentrants\nthousands\nlevel\n\n\n\n\n\nDuration\n\n\n\n\n\n\n\n\n\nCode\nLabel\nUnits\nTransform hint\n\n\n\n\nLU0@USECON\nUnemployed 0–4 weeks\nthousands\nlevel\n\n\nLU5@USECON\nUnemployed 5–14 weeks\nthousands\nlevel\n\n\nLU15@USECON\nUnemployed 15–26 weeks\nthousands\nlevel\n\n\nLUT15@USECON\nUnemployed 15+ weeks\nthousands\nlevel\n\n\nLUT27@USECON\nUnemployed 27+ weeks\nthousands\nlevel\n\n\nLU0P@USECON\nShare unemployed 0–4 weeks\npercent\nrate\n\n\nLU5P@USECON\nShare unemployed 5–14 weeks\npercent\nrate\n\n\nLU15P@USECON\nShare unemployed 15–26 weeks\npercent\nrate\n\n\nLUT15P@USECON\nShare unemployed 15+ weeks\npercent\nrate\n\n\nLUT27P@USECON\nShare unemployed 27+ weeks\npercent\nrate\n\n\n\n\n\nJolts\n\n\n\n\n\n\n\n\n\nCode\nLabel\nUnits\nTransform hint\n\n\n\n\nLJJTLA@USECON\nJob openings — total (level)\nthousands\nlevel\n\n\nLJJTPA@USECON\nJob openings — total (rate)\npercent\nrate\n\n\nLJHTLA@USECON\nHires — total (level)\nthousands\nlevel\n\n\nLJHTPA@USECON\nHires — total (rate)\npercent\nrate\n\n\nLJSTLA@USECON\nSeparations — total (level)\nthousands\nlevel\n\n\nLJSTPA@USECON\nSeparations — total (rate)\npercent\nrate\n\n\nLJQTLA@USECON\nQuits — total (level)\nthousands\nlevel\n\n\nLJQTPA@USECON\nQuits — total (rate)\npercent\nrate\n\n\nLJLTLA@USECON\nLayoffs & discharges — total (level)\nthousands\nlevel\n\n\nLJLTPA@USECON\nLayoffs & discharges — total (rate)\npercent\nrate\n\n\nLJJCNLA@USECON\nJob openings — construction\nthousands\nlevel\n\n\nLJJMNLA@USECON\nJob openings — manufacturing\nthousands\nlevel\n\n\nLJJRTLA@USECON\nJob openings — retail trade\nthousands\nlevel\n\n\nLJJPBLA@USECON\nJob openings — professional & business\nthousands\nlevel\n\n\nLJJEHLA@USECON\nJob openings — education & health\nthousands\nlevel\n\n\nLJJHCLA@USECON\nJob openings — health care & social\nthousands\nlevel\n\n\nLJJLHLA@USECON\nJob openings — leisure & hospitality\nthousands\nlevel\n\n\nLJJRCLA@USECON\nJob openings — arts, entertainment, recreation\nthousands\nlevel\n\n\nLJJAFLA@USECON\nJob openings — accommodation & food\nthousands\nlevel\n\n\nLJJGLA@USECON\nJob openings — government\nthousands\nlevel\n\n\nLJJGSLA@USECON\nJob openings — state & local government\nthousands\nlevel\n\n\nLJQTPPA@USECON\nQuits rate — total private\npercent\nrate\n\n\nLJQCNPA@USECON\nQuits rate — construction\npercent\nrate\n\n\nLJQMNPA@USECON\nQuits rate — manufacturing\npercent\nrate\n\n\nLJQRTPA@USECON\nQuits rate — retail trade\npercent\nrate\n\n\nLJQINPA@USECON\nQuits rate — information\npercent\nrate\n\n\nLJQFIPA@USECON\nQuits rate — financial activities\npercent\nrate\n\n\nLJQPBPA@USECON\nQuits rate — professional & business\npercent\nrate\n\n\nLJQEHPA@USECON\nQuits rate — private education & health\npercent\nrate\n\n\nLJQHCPA@USECON\nQuits rate — health care & social\npercent\nrate\n\n\nLJQLHPA@USECON\nQuits rate — leisure & hospitality\npercent\nrate\n\n\nLJQAFPA@USECON\nQuits rate — accommodation & food\npercent\nrate\n\n\nLJQGPA@USECON\nQuits rate — government\npercent\nrate"
+  },
+  {
+    "objectID": "about.html#revision-policy",
+    "href": "about.html#revision-policy",
+    "title": "About",
+    "section": "Revision policy",
+    "text": "Revision policy\nCES estimates are revised in the two months following first release and again at the annual benchmark each February. CPS is revised much less often. JOLTS levels are revised regularly — particularly the most recent two months. This dashboard always shows the latest vintage; older vintages are not preserved."
+  },
+  {
+    "objectID": "about.html#contact",
+    "href": "about.html#contact",
+    "title": "About",
+    "section": "Contact",
+    "text": "Contact\nQuestions / corrections: see the linked GitHub repo footer.\n\nSource: Haver Analytics. Joshua Bailey"
+  },
+  {
+    "objectID": "wages.html",
+    "href": "wages.html",
+    "title": "Wages",
+    "section": "",
+    "text": "Average hourly earnings (AHE) is the establishment-survey wage tracker. It is not quality-adjusted — composition shifts can move it independently of any underlying wage pressure — but it is timely. The 3-month annualised view captures recent momentum; the year-on-year view smooths through monthly noise.\n\n\n\n\n\n\n\n\n\n\nFigure 1: AHE growth — toggle between 3m, 6m annualised, and YoY.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 2: All employees vs production & nonsupervisory — the latter strips out high-end compositional shifts.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 3\n\n\n\n\n\nSource: Haver Analytics. Joshua Bailey"
+  },
+  {
+    "objectID": "establishment.html",
+    "href": "establishment.html",
+    "title": "Establishment Survey",
+    "section": "",
+    "text": "The establishment (CES) survey of payroll employment was not interrupted by the 2025 federal-government shutdown — every series here has continuous monthly data through the latest release. Toggles let you switch between monthly, 3-month, and 6-month moving averages."
+  },
+  {
+    "objectID": "establishment.html#sectoral-summary",
+    "href": "establishment.html#sectoral-summary",
+    "title": "Establishment Survey",
+    "section": "Sectoral summary",
+    "text": "Sectoral summary\nThe latest reading by sector against trailing averages and pre-pandemic norms. Indented rows are subcomponents of the row above.\n\n\n\n\n\n\n\n\n\nSector\nLatest\n3m avg\n6m avg\n2024 avg\n2017–19 avg\n\n\n\n\n0\nTotal nonfarm\n+178\n+68\n+15\n+122\n+177\n\n\n1\nTotal private\n+186\n+79\n+52\n+85\n+166\n\n\n2\nGoods-producing\n+43\n+23\n+9\n-2\n+33\n\n\n3\nMining & logging\n+2\n-0\n-0\n-1\n+1\n\n\n4\nConstruction\n+26\n+19\n+12\n+15\n+20\n\n\n5\nManufacturing\n+15\n+4\n-4\n-15\n+12\n\n\n6\nWholesale trade\n+3\n+4\n+0\n-3\n+3\n\n\n7\nRetail trade\n+10\n+5\n-4\n-8\n-7\n\n\n8\nTransport & warehousing\n+21\n-2\n-11\n+9\n+18\n\n\n9\nUtilities\n-1\n+0\n+1\n+1\n-0\n\n\n10\nInformation\n-3\n-17\n-11\n-6\n+2\n\n\n11\nFinancial activities\n-15\n-17\n-9\n+0\n+13\n\n\n12\nProfessional & business\n+2\n+15\n+10\n-9\n+30\n\n\n13\nEducation & health\n+91\n+56\n+51\n+84\n+42\n\n\n14\nLeisure & hospitality\n+44\n+13\n+15\n+13\n+27\n\n\n15\nOther services\n-9\n-0\n+3\n+6\n+6\n\n\n16\nPrivate services\n+143\n+56\n+44\n+87\n+133\n\n\n17\nGovernment\n-8\n-11\n-38\n+36\n+12"
+  },
+  {
+    "objectID": "establishment.html#headline-payrolls",
+    "href": "establishment.html#headline-payrolls",
+    "title": "Establishment Survey",
+    "section": "Headline payrolls",
+    "text": "Headline payrolls\n\n\n\n\n\n\n\n\n\n\nFigure 1: Monthly change in total nonfarm payrolls. Use the radio to switch smoothing."
+  },
+  {
+    "objectID": "establishment.html#sectoral-contributions",
+    "href": "establishment.html#sectoral-contributions",
+    "title": "Establishment Survey",
+    "section": "Sectoral contributions",
+    "text": "Sectoral contributions\n\n\n\n\n\n\n\n\n\n\nFigure 2: Monthly change by sector since the start of 2024.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 3: Cumulative jobs added since December 2024 by sector."
+  },
+  {
+    "objectID": "establishment.html#diffusion-index",
+    "href": "establishment.html#diffusion-index",
+    "title": "Establishment Survey",
+    "section": "Diffusion index",
+    "text": "Diffusion index\nThe CES diffusion index is the share of industries adding jobs in a given month (with industries unchanged counted at half-weight). Readings above 50 indicate broad-based hiring; readings below 50 indicate the gains are concentrated.\n\n\n\n\n\n\n\n\n\n\nFigure 4: CES diffusion index — share of tracked industries adding jobs.\n\n\n\n\n\nSource: Haver Analytics. Joshua Bailey"
+  },
+  {
+    "objectID": "jolts.html",
+    "href": "jolts.html",
+    "title": "JOLTS",
+    "section": "",
+    "text": "JOLTS gives the demand side of the labour market: the stock of vacancies and flows through hires, quits, and layoffs. The key tightness reads are the vacancies-to-unemployed (V/U) ratio and the quits rate — workers quit more readily when they have outside options. Both fell back toward their pre-pandemic averages over 2024–25."
+  },
+  {
+    "objectID": "jolts.html#headline-series",
+    "href": "jolts.html#headline-series",
+    "title": "JOLTS",
+    "section": "Headline series",
+    "text": "Headline series\n\n\n\n\n\n\n\n\n\n\nFigure 1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 2"
+  },
+  {
+    "objectID": "jolts.html#vacancies-to-unemployed",
+    "href": "jolts.html#vacancies-to-unemployed",
+    "title": "JOLTS",
+    "section": "Vacancies-to-unemployed",
+    "text": "Vacancies-to-unemployed\n\n\n\n\n\n\n\n\n\n\nFigure 3"
+  },
+  {
+    "objectID": "jolts.html#quits-rate-by-industry",
+    "href": "jolts.html#quits-rate-by-industry",
+    "title": "JOLTS",
+    "section": "Quits rate by industry",
+    "text": "Quits rate by industry\n\n\n\n\n\n\n\n\n\n\nFigure 4: Quits rate by industry. Y-axis is independent per facet to make trend shape readable."
+  },
+  {
+    "objectID": "jolts.html#comparison-with-pre-pandemic",
+    "href": "jolts.html#comparison-with-pre-pandemic",
+    "title": "JOLTS",
+    "section": "Comparison with pre-pandemic",
+    "text": "Comparison with pre-pandemic\n\n\n\n\n\n\n\n\n\nMetric\nLatest (%)\n2017–19 avg (%)\nDiff (pp)\n\n\n\n\n0\nOpenings rate\n4.2\n4.36\n-0.16\n\n\n1\nHires rate\n3.1\n3.81\n-0.71\n\n\n2\nQuits rate\n1.9\n2.24\n-0.34\n\n\n3\nLayoffs rate\n1.1\n1.22\n-0.12\n\n\n\n\n\n\n\n\nSource: Haver Analytics. Joshua Bailey"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Jobs day overview",
+    "section": "",
+    "text": "Nonfarm payrolls\n\n\n+178\n\n\n3m avg: +68\n\n\n\n\nUnemployment rate\n\n\n4.3%\n\n\nU-6: 8.0%\n\n\n\n\nLFPR (16+)\n\n\n61.9%\n\n\nPrime age: 83.8%\n\n\n\n\nEPOP — prime age\n\n\n80.7%\n\n\n\n\nJOLTS openings\n\n\n6,882\n\n\nQuits rate: 1.9%\n\n\n\n\nSahm rule\n\n\n0.13pp\n\n\n0.50pp = recession signal"
+  },
+  {
+    "objectID": "index.html#what-changed-this-release",
+    "href": "index.html#what-changed-this-release",
+    "title": "Jobs day overview",
+    "section": "What changed this release",
+    "text": "What changed this release\n\nHeadline payrolls printed at +178 in March 2026, against a 3-month trailing average of +68. Unemployment fell from 4.4% to 4.3%."
+  },
+  {
+    "objectID": "index.html#headline-charts",
+    "href": "index.html#headline-charts",
+    "title": "Jobs day overview",
+    "section": "Headline charts",
+    "text": "Headline charts\n\n\n\n\n\n\n\n\n\n\nFigure 1: Total nonfarm change with smoothing toggle.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 2: Civilian unemployment rate, 16+.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 3: Vacancies-to-unemployed ratio.\n\n\n\n\n\nSource: Haver Analytics. Joshua Bailey"
+  },
+  {
+    "objectID": "household.html",
+    "href": "household.html",
+    "title": "Household Survey",
+    "section": "",
+    "text": "Series in this section were affected by the September–November 2025 federal government shutdown: the October 2025 CPS release was missed. Those data points are linearly interpolated in the bundle so the dashboard reads continuously, but treat the imputed month with appropriate caution. See About."
+  },
+  {
+    "objectID": "household.html#headline-rates",
+    "href": "household.html#headline-rates",
+    "title": "Household Survey",
+    "section": "Headline rates",
+    "text": "Headline rates\n\n\n\n\n\n\n\n\n\n\nFigure 1: U-3, U-5 and U-6 — broader measures track labour-market slack beyond the headline unrate.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 2: Civilian unemployment rate — toggle smoothing."
+  },
+  {
+    "objectID": "household.html#participation-and-employment-to-population",
+    "href": "household.html#participation-and-employment-to-population",
+    "title": "Household Survey",
+    "section": "Participation and employment-to-population",
+    "text": "Participation and employment-to-population\nThe 25-54 (prime-age) cuts strip out cyclical effects from the entry / exit of teenagers and retirees. Dashed lines show each series’ 2019 average as a pre-pandemic baseline.\n\n\n\n\n\n\n\n\n\n\nFigure 3"
+  },
+  {
+    "objectID": "household.html#sahm-rule",
+    "href": "household.html#sahm-rule",
+    "title": "Household Survey",
+    "section": "Sahm rule",
+    "text": "Sahm rule\nThe Sahm rule (Claudia Sahm, 2019) signals the start of a recession when the 3-month moving average of the unemployment rate rises 0.5 percentage points or more above its trailing 12-month minimum. The threshold is shown in red.\n\n\n\n\n\n\n\n\n\n\nFigure 4\n\n\n\n\n\n\n\nTable 1\n\n\nLatest reading: 0.13pp — currently below the 0.5pp recession threshold."
+  },
+  {
+    "objectID": "household.html#composition-of-unemployment",
+    "href": "household.html#composition-of-unemployment",
+    "title": "Household Survey",
+    "section": "Composition of unemployment",
+    "text": "Composition of unemployment\n\n\n\n\n\n\n\n\n\n\nFigure 5: Unemployment by duration. Long-duration shares lag the cycle and are watched as a slack indicator.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 6: Decomposition of the unemployed pool by reason.\n\n\n\n\n\nSource: Haver Analytics. Joshua Bailey"
+  }
+]
