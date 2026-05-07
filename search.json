@@ -81,7 +81,7 @@
     "href": "about.html#data-source",
     "title": "About",
     "section": "Data source",
-    "text": "Data source\nAll series are pulled from Haver Analytics. There is no FRED dependency. Each rebuild fetches every series in a single round-trip and caches the result on disk; if Haver is unreachable, the dashboard rebuilds from the cached CSV.\n\nLast data refresh: 2026-05-07T16:47:47Z\nSeries in catalogue: 127\nBundle range: 2000-01-01 → 2026-03-01\nBundle dimensions: 315 rows × 819 columns"
+    "text": "Data source\nAll series are pulled from Haver Analytics. There is no FRED dependency. Each rebuild fetches every series in a single round-trip and caches the result on disk; if Haver is unreachable, the dashboard rebuilds from the cached CSV.\n\nLast data refresh: 2026-05-07T17:30:19Z\nSeries in catalogue: 127\nBundle range: 2000-01-01 → 2026-03-01\nBundle dimensions: 315 rows × 819 columns"
   },
   {
     "objectID": "about.html#shutdown-gap-and-interpolation",
