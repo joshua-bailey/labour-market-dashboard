@@ -1,5 +1,250 @@
 [
   {
+    "objectID": "breakeven.html",
+    "href": "breakeven.html",
+    "title": "Breakeven Employment",
+    "section": "",
+    "text": "Payroll growth only lowers the unemployment rate when it runs faster than the labour force is growing. The pace that exactly absorbs new entrants, leaving the unemployment rate unchanged, is the breakeven rate of job growth, and it is just the growth rate of the labour force. Because net immigration has slowed sharply, labour-force growth, and so breakeven, has fallen toward zero. The catch is that the published labour force jumps every January when BLS resets its population controls, so those resets have to be stripped out first.\nBreakeven, jobs/mo\n\n\n-151\n\n\n\n\nPayrolls, 3-month avg\n\n\n+111\n\n\n+262 vs breakeven\n\n\n\n\nOkun slope β\n\n\n-0.73"
+  },
+  {
+    "objectID": "breakeven.html#jobs-needed-vs-jobs-added",
+    "href": "breakeven.html#jobs-needed-vs-jobs-added",
+    "title": "Breakeven Employment",
+    "section": "Jobs needed vs jobs added",
+    "text": "Jobs needed vs jobs added\nThe red line is the three-month average change in nonfarm payrolls. The navy line is the model’s estimate of breakeven, with the shaded 90% confidence band around it. When hiring runs above the band, the unemployment rate should be falling; when it runs below, the rate should be drifting up.\n\n\n\n\n\n\n\n\n\n\nFigure 1: Three-month average payroll change against the breakeven rate (90% band). Four-year window by default; use the radio to change it.\n\n\n\n\n\nIn Jun 2026, payrolls ran at +111 on a three-month average against an estimated breakeven of -151 a month, so hiring is above breakeven, implying downward pressure on the unemployment rate."
+  },
+  {
+    "objectID": "breakeven.html#how-breakeven-has-moved",
+    "href": "breakeven.html#how-breakeven-has-moved",
+    "title": "Breakeven Employment",
+    "section": "How breakeven has moved",
+    "text": "How breakeven has moved\nBreakeven is the trend pace of labour-force growth, which fell through the slow-recovery 2010s, rose sharply during the 2022–24 surge in population growth, and has since dropped back toward zero as net immigration faded. The gap between payroll growth and labour-force growth below is what drives the unemployment rate.\n\n\n\n\n\n\n\n\n\n\nFigure 2: Payroll growth (12-month) vs the current pace of population-adjusted labour-force growth (breakeven), annualised %."
+  },
+  {
+    "objectID": "breakeven.html#does-the-model-fit",
+    "href": "breakeven.html#does-the-model-fit",
+    "title": "Breakeven Employment",
+    "section": "Does the model fit?",
+    "text": "Does the model fit?\nA sanity check on the bridge. The model-implied 12-month change in the unemployment rate, built from the breakeven gap, against the actual change.\n\n\n\n\n\n\n\n\n\n\nFigure 3: Model-implied vs actual 12-month change in the unemployment rate.\n\n\n\n\n\n\n\n\n\n\nMethodology\n\n\n\n\n\nThe change in the unemployment rate is modelled as an Okun-style bridge:\n\\[\\Delta_{12} u_t = c + \\rho\\, \\Delta_{12} u_{t-12} + \\beta\\,\\big(\\Delta_{12}\\log E_t - \\Delta_{12}\\log E^{*}_t\\big) + \\varepsilon_t\\]\nwhere E is payroll (CES) employment and E* is breakeven employment, which is the labour force. Breakeven cannot be a free latent series here: for any β a breakeven path fits the equation perfectly, so it would be unidentified. It is instead supplied as an input, the labour force, so breakeven jobs per month is the current pace of labour-force growth.\nPopulation-control adjustment. The household-survey labour force jumps every January when BLS resets its population controls (e.g. about +2.1m in 2025, −1.1m in 2026). These are not flows of workers in that month: they recognise immigration that arrived earlier and then extrapolate it forward through the year. So the adjustment is not to erase each jump (that would delete the immigration and understate the surge years) but to credit it back as growth over the months it actually accrued — a multi-year window for the large 2025 census re-benchmark (which caught up several years of undercounted immigration), the prior year for ordinary annual controls. The result is a continuous labour force whose growth carries the surge where it happened and unwinds it as immigration faded.\nWe then fit a smooth-trend unobserved-components state-space model to that series and read its trend slope as the current pace of labour-force growth, which is breakeven. We read the slope, not a 12-month trailing average, because the trailing window lags badly when growth turns quickly. The trend’s flexibility is fixed to a small value so it reads as a smooth pace rather than chasing the noisy month-to-month survey; the band comes from the smoother’s own uncertainty (wide at the end, where the current pace is least pinned and the latest CPS readings are volatile). The unemployment rate is used as-is, since population controls scale the unemployment level and the labour force together and cancel in the rate.\nThe change-in-unemployment equation itself is estimated as a state-space model (SARIMAX with MA(11) errors, the correct structure for overlapping 12-month differences, with native missing-data handling). It yields β and the model’s implied path for Δ12 u; the breakeven number does not depend on β.\n\n\n\n\nParameter\nValue\n\n\n\n\nLabour-force adjustment\nstate-space\n\n\nΔu model\nsarimax (MA 11)\n\n\nβ (Okun slope)\n-0.726\n\n\nρ (persistence)\n-0.001\n\n\nImplied vs actual Δu\ncorr = 0.96\n\n\nLatest Jan control effect\n-1,062k\n\n\n\n\nOne caveat: the dependent variable is an overlapping 12-month difference, so its errors are serially correlated by construction; the MA(11) error model accounts for this. The breakeven series still inherits the noise of the household survey, which is why the band, while tighter than a raw rolling estimate, at present comfortably includes zero. Because this measure is faithful to the reported labour force, which has been contracting sharply as immigration reverses, its latest reading runs more negative than projection-based external estimates that smooth through the recent survey prints; read the level as directional (breakeven has fallen well below zero) rather than precise.\n\n\n\n\nSource: Haver Analytics. Joshua Bailey"
+  },
+  {
+    "objectID": "household.html",
+    "href": "household.html",
+    "title": "Household Survey",
+    "section": "",
+    "text": "Series in this section were affected by the September–November 2025 federal government shutdown: the October 2025 CPS release was missed. Those data points are linearly interpolated in the bundle so the dashboard reads continuously, but treat the imputed month with appropriate caution. See About."
+  },
+  {
+    "objectID": "household.html#headline-rates",
+    "href": "household.html#headline-rates",
+    "title": "Household Survey",
+    "section": "Headline rates",
+    "text": "Headline rates\n\n\n\n\n\n\n\n\n\n\nFigure 1: U-3, U-5 and U-6 — broader measures track labour-market slack beyond the headline unrate.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 2: Civilian unemployment rate — toggle smoothing."
+  },
+  {
+    "objectID": "household.html#participation-and-employment-to-population",
+    "href": "household.html#participation-and-employment-to-population",
+    "title": "Household Survey",
+    "section": "Participation and employment-to-population",
+    "text": "Participation and employment-to-population\nThe 25-54 (prime-age) cuts strip out cyclical effects from the entry / exit of teenagers and retirees. Dashed lines show each series’ 2019 average as a pre-pandemic baseline.\n\n\n\n\n\n\n\n\n\n\nFigure 3"
+  },
+  {
+    "objectID": "household.html#sahm-rule",
+    "href": "household.html#sahm-rule",
+    "title": "Household Survey",
+    "section": "Sahm rule",
+    "text": "Sahm rule\nThe Sahm rule (Claudia Sahm, 2019) signals the start of a recession when the 3-month moving average of the unemployment rate rises 0.5 percentage points or more above its trailing 12-month minimum. The threshold is shown in red.\n\n\n\n\n\n\n\n\n\n\nFigure 4\n\n\n\n\n\n\n\nTable 1\n\n\nLatest reading: 0.10pp — currently below the 0.5pp recession threshold."
+  },
+  {
+    "objectID": "household.html#composition-of-unemployment",
+    "href": "household.html#composition-of-unemployment",
+    "title": "Household Survey",
+    "section": "Composition of unemployment",
+    "text": "Composition of unemployment\n\n\n\n\n\n\n\n\n\n\nFigure 5: Unemployment by duration. Long-duration shares lag the cycle and are watched as a slack indicator.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 6: Decomposition of the unemployed pool by reason."
+  },
+  {
+    "objectID": "household.html#where-did-the-unemployment-rate-move",
+    "href": "household.html#where-did-the-unemployment-rate-move",
+    "title": "Household Survey",
+    "section": "Where did the unemployment rate move?",
+    "text": "Where did the unemployment rate move?\nA single-figure decomposition of the change in unrate since the December 2024 “baseline” across four demographic dimensions. Red bars = unrate up; navy = down. Comparing magnitudes across cohorts reveals whether the movement is concentrated (e.g. younger workers, less-educated, particular ethnic groups) or broad-based.\n\n\n\n\n\n\n\n\n\n\nFigure 7: Change in unemployment rate since December 2024, by age, race/ethnicity, and education.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 8\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 9\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 10\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 11: Native-born vs foreign-born unemployment, NSA so smoothed with a 6-month moving average."
+  },
+  {
+    "objectID": "household.html#labour-force-flows-bathtub",
+    "href": "household.html#labour-force-flows-bathtub",
+    "title": "Household Survey",
+    "section": "Labour-force flows (“bathtub”)",
+    "text": "Labour-force flows (“bathtub”)\nThe unemployment level changes each month as people flow into and out of the unemployment pool. There are six gross flows; here are the four that touch the U-pool directly, plus the two flows around it.\n\n\n\n\n\n\n\n\n\n\nFigure 12: Six gross labour-force flows. Monthly in grey, 3-month MA in navy.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 13\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 14: Job-finding rate — the probability an unemployed worker finds a job within the month.\n\n\n\n\n\nSource: Haver Analytics. Joshua Bailey"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Jobs day overview",
+    "section": "",
+    "text": "Nonfarm payrolls\n\n\n+172\n\n\n3m avg: +188\n\n\n\n\nUnemployment rate\n\n\n4.3%\n\n\nU-6: 8.1%\n\n\n\n\nLFPR (16+)\n\n\n61.8%\n\n\nPrime age: 83.8%\n\n\n\n\nEPOP — prime age\n\n\n80.7%\n\n\n\n\nJOLTS openings\n\n\n7,618\n\n\nQuits rate: 1.9%\n\n\n\n\nSahm rule\n\n\n0.10pp\n\n\n0.50pp = recession signal"
+  },
+  {
+    "objectID": "index.html#what-changed-this-release",
+    "href": "index.html#what-changed-this-release",
+    "title": "Jobs day overview",
+    "section": "What changed this release",
+    "text": "What changed this release\n\nHeadline payrolls printed at +172 in May 2026, against a 3-month trailing average of +188. Unemployment held from 4.3% to 4.3%."
+  },
+  {
+    "objectID": "index.html#headline-charts",
+    "href": "index.html#headline-charts",
+    "title": "Jobs day overview",
+    "section": "Headline charts",
+    "text": "Headline charts\n\n\n\n\n\n\n\n\n\n\nFigure 1: Total nonfarm change with smoothing toggle.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 2: Civilian unemployment rate, 16+.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 3: Vacancies-to-unemployed ratio.\n\n\n\n\n\nSource: Haver Analytics. Joshua Bailey"
+  },
+  {
+    "objectID": "jolts.html",
+    "href": "jolts.html",
+    "title": "JOLTS",
+    "section": "",
+    "text": "JOLTS gives the demand side of the labour market: the stock of vacancies and flows through hires, quits, and layoffs. The key tightness reads are the vacancies-to-unemployed (V/U) ratio and the quits rate — workers quit more readily when they have outside options. Both fell back toward their pre-pandemic averages over 2024–25."
+  },
+  {
+    "objectID": "jolts.html#headline-series",
+    "href": "jolts.html#headline-series",
+    "title": "JOLTS",
+    "section": "Headline series",
+    "text": "Headline series\n\n\n\n\n\n\n\n\n\n\nFigure 1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 2"
+  },
+  {
+    "objectID": "jolts.html#vacancies-to-unemployed",
+    "href": "jolts.html#vacancies-to-unemployed",
+    "title": "JOLTS",
+    "section": "Vacancies-to-unemployed",
+    "text": "Vacancies-to-unemployed\n\n\n\n\n\n\n\n\n\n\nFigure 3"
+  },
+  {
+    "objectID": "jolts.html#quits-rate-by-industry",
+    "href": "jolts.html#quits-rate-by-industry",
+    "title": "JOLTS",
+    "section": "Quits rate by industry",
+    "text": "Quits rate by industry\n\n\n\n\n\n\n\n\n\n\nFigure 4: Quits rate by industry. Y-axis is independent per facet to make trend shape readable."
+  },
+  {
+    "objectID": "jolts.html#comparison-with-pre-pandemic",
+    "href": "jolts.html#comparison-with-pre-pandemic",
+    "title": "JOLTS",
+    "section": "Comparison with pre-pandemic",
+    "text": "Comparison with pre-pandemic\n\n\n\n\n\n\n\n\n\nMetric\nLatest (%)\n2017–19 avg (%)\nDiff (pp)\n\n\n\n\n0\nOpenings rate\n4.6\n4.36\n0.24\n\n\n1\nHires rate\n3.2\n3.81\n-0.61\n\n\n2\nQuits rate\n1.9\n2.24\n-0.34\n\n\n3\nLayoffs rate\n1.1\n1.22\n-0.12\n\n\n\n\n\n\n\n\nSource: Haver Analytics. Joshua Bailey"
+  },
+  {
+    "objectID": "establishment.html",
+    "href": "establishment.html",
+    "title": "Establishment Survey",
+    "section": "",
+    "text": "The establishment (CES) survey of payroll employment was not interrupted by the 2025 federal-government shutdown — every series here has continuous monthly data through the latest release. Toggles let you switch between monthly, 3-month, and 6-month moving averages."
+  },
+  {
+    "objectID": "establishment.html#sectoral-summary",
+    "href": "establishment.html#sectoral-summary",
+    "title": "Establishment Survey",
+    "section": "Sectoral summary",
+    "text": "Sectoral summary\nThe latest reading by sector against trailing averages and pre-pandemic norms, with sectoral wage growth alongside (production & nonsupervisory AHE).\nThe table is sortable on every column (click any header). Default sort is by the largest absolute change in the latest month so the biggest movers float to the top. Use the Level column to sort back into hierarchy: 0 = total nonfarm, 1 = total private / government, 2 = major group (goods / services), 3 = industry, 4 = sub-industry. The search box filters on any field — type “Goods” or “Services” to isolate one tree.\n\n\n\nTable 1\n\n\n\n\n\n\n\n                                \n        &lt;g transform=\"translate(450 152)\"&gt;\n            &lt;polyline points=\"-15,-20 -35,-20 -35,40 25,40 25,20\" /&gt;\n            &lt;rect x=\"-15\" y=\"-40\" width=\"60\" height=\"60\" /&gt;\n        &lt;/g&gt;\n\n        &lt;g transform=\"translate(50 352)\"&gt;\n            &lt;polygon points=\"-35,-5 0,-40 35,-5\" /&gt;\n            &lt;polygon points=\"-35,10 0,45 35,10\" /&gt;\n        &lt;/g&gt;\n\n        &lt;g transform=\"translate(75 250)\"&gt;\n            &lt;polyline points=\"-30,30 -60,0 -30,-30\" /&gt;\n            &lt;polyline points=\"0,30 -30,0 0,-30\" /&gt;\n        &lt;/g&gt;\n\n        &lt;g transform=\"translate(425 250) rotate(180)\"&gt;\n            &lt;polyline points=\"-30,30 -60,0 -30,-30\" /&gt;\n            &lt;polyline points=\"0,30 -30,0 0,-30\" /&gt;\n        &lt;/g&gt;\n    &lt;/g&gt;\n&lt;/g&gt;\n\n Loading ITables v2.7.3 from the internet… (need help?)"
+  },
+  {
+    "objectID": "establishment.html#headline-payrolls",
+    "href": "establishment.html#headline-payrolls",
+    "title": "Establishment Survey",
+    "section": "Headline payrolls",
+    "text": "Headline payrolls\n\n\n\n\n\n\n\n\n\n\nFigure 1: Monthly change in total nonfarm payrolls. Use the radio to switch smoothing."
+  },
+  {
+    "objectID": "establishment.html#sectoral-contributions",
+    "href": "establishment.html#sectoral-contributions",
+    "title": "Establishment Survey",
+    "section": "Sectoral contributions",
+    "text": "Sectoral contributions\n\n\n\n\n\n\n\n\n\n\nFigure 2: Monthly change by sector since the start of 2024.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 3: Cumulative jobs added since December 2024 by sector."
+  },
+  {
+    "objectID": "establishment.html#diffusion-index",
+    "href": "establishment.html#diffusion-index",
+    "title": "Establishment Survey",
+    "section": "Diffusion index",
+    "text": "Diffusion index\nThe CES diffusion index is the share of industries adding jobs in a given month (with industries unchanged counted at half-weight). Readings above 50 indicate broad-based hiring; readings below 50 indicate the gains are concentrated.\n\n\n\n\n\n\n\n\n\n\nFigure 4: CES diffusion index — share of tracked industries adding jobs."
+  },
+  {
+    "objectID": "establishment.html#share-of-private-sector-gains",
+    "href": "establishment.html#share-of-private-sector-gains",
+    "title": "Establishment Survey",
+    "section": "Share of private-sector gains",
+    "text": "Share of private-sector gains\nA Konczal-style framing: of the cumulative private-sector jobs added since December 2024, how much has gone to health care & social assistance vs the five blue-collar sectors (mining, construction, manufacturing, transport & warehousing, utilities) vs all other private industries combined? When gains are concentrated in health care, the headline NFP number is masking weakness elsewhere.\n\n\n\n\n\n\n\n\n\n\nFigure 5"
+  },
+  {
+    "objectID": "establishment.html#blue-collar-trend-gap",
+    "href": "establishment.html#blue-collar-trend-gap",
+    "title": "Establishment Survey",
+    "section": "Blue-collar trend gap",
+    "text": "Blue-collar trend gap\nEach panel fits a linear trend through cumulative job changes from December 2022 to December 2024, then projects it forward. The dashed trend line is what hiring would look like at the 2023–24 pace; the solid line is actual. Negative gap = jobs below trend.\n\n\n\n\n\n\n\n\n\n\nFigure 6: Cumulative jobs added since 2022Q4 in five blue-collar industries vs the 2022Q4–2024Q4 trend."
+  },
+  {
+    "objectID": "establishment.html#cyclical-sensitivity-tertiles",
+    "href": "establishment.html#cyclical-sensitivity-tertiles",
+    "title": "Establishment Survey",
+    "section": "Cyclical sensitivity tertiles",
+    "text": "Cyclical sensitivity tertiles\nSectors grouped (manually, by conventional economic sensitivity) into high, medium and low cyclical buckets. Rolling 3-month averages of monthly payroll change. The high-sensitivity tertile drops first in slowdowns and recovers fastest; the low-sensitivity tertile (mostly health, education and government) is much steadier.\n\n\n\n\n\n\n\n\n\n\nFigure 7\n\n\n\n\n\nSource: Haver Analytics. Joshua Bailey"
+  },
+  {
+    "objectID": "wages.html",
+    "href": "wages.html",
+    "title": "Wages",
+    "section": "",
+    "text": "Average hourly earnings (AHE) is the establishment-survey wage tracker. It is not quality-adjusted — composition shifts can move it independently of any underlying wage pressure — but it is timely. The 3-month annualised view captures recent momentum; the year-on-year view smooths through monthly noise.\n\n\n\n\n\n\n\n\n\n\nFigure 1: AHE growth — toggle between 3m, 6m annualised, and YoY.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 2: All employees vs production & nonsupervisory — the latter strips out high-end compositional shifts.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 3\n\n\n\n\n\nSource: Haver Analytics. Joshua Bailey"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "A standing read of the three monthly U.S. labour-market releases — Establishment Survey (CES), Household Survey (CPS), and JOLTS — that updates each release with the same set of charts, tables, and analytical framings. The aim is to put the same headline numbers, the same sectoral breakdowns, the same alternative measures, and the same diffusion / Sahm / V-U / quits-by-industry views in front of you on jobs-Friday morning. Year to year and across cycles you can compare the same picture."
+  },
+  {
+    "objectID": "about.html#what-this-dashboard-is",
+    "href": "about.html#what-this-dashboard-is",
+    "title": "About",
+    "section": "",
+    "text": "A standing read of the three monthly U.S. labour-market releases — Establishment Survey (CES), Household Survey (CPS), and JOLTS — that updates each release with the same set of charts, tables, and analytical framings. The aim is to put the same headline numbers, the same sectoral breakdowns, the same alternative measures, and the same diffusion / Sahm / V-U / quits-by-industry views in front of you on jobs-Friday morning. Year to year and across cycles you can compare the same picture."
+  },
+  {
+    "objectID": "about.html#data-source",
+    "href": "about.html#data-source",
+    "title": "About",
+    "section": "Data source",
+    "text": "Data source\nAll series are pulled from Haver Analytics. There is no FRED dependency. Each rebuild fetches every series in a single round-trip and caches the result on disk; if Haver is unreachable, the dashboard rebuilds from the cached CSV.\n\nLast data refresh: 2026-06-05T12:31:40Z\nSeries in catalogue: 127\nBundle range: 2000-01-01 → 2026-05-01\nBundle dimensions: 317 rows × 819 columns"
+  },
+  {
+    "objectID": "about.html#shutdown-gap-and-interpolation",
+    "href": "about.html#shutdown-gap-and-interpolation",
+    "title": "About",
+    "section": "Shutdown gap and interpolation",
+    "text": "Shutdown gap and interpolation\nThe September–November 2025 federal-government shutdown caused the BLS to miss the October 2025 release of the Household Survey (CPS). The Establishment Survey (CES) and JOLTS were not interrupted.\nWe searched Haver for shutdown-imputed variants of the affected codes (LR, LE, LF, LP, LQ, MLU5, MLU6, FA53, the unemployment-by-duration series, etc.) and none are published — the standard codes carry NaN for the missed month. The build pipeline therefore applies pandas time-based linear interpolation across interior gaps only, never extrapolating leading or trailing NaN. The interpolated month is logged in bundle_meta.json.\n\nSeries interpolated this build: 57.\nMonths filled: 2025-10-01, 2025-11-01."
+  },
+  {
+    "objectID": "about.html#series-catalogue",
+    "href": "about.html#series-catalogue",
+    "title": "About",
+    "section": "Series catalogue",
+    "text": "Series catalogue\nEvery Haver code currently in the build, grouped by survey:\n\n\nEstablishment\n\n\n\n\n\n\n\n\n\nCode\nLabel\nUnits\nTransform hint\n\n\n\n\nLANAGRD@USECON\nTotal nonfarm\nthousands\ndiff\n\n\nLANAGRA@USECON\nTotal nonfarm (YoY %)\npercent\nyoy_pct\n\n\nLAPRIVD@USECON\nTotal private\nthousands\ndiff\n\n\nLAGOODD@USECON\nGoods-producing\nthousands\ndiff\n\n\nLACONSD@USECON\nConstruction\nthousands\ndiff\n\n\nLAMANUD@USECON\nManufacturing\nthousands\ndiff\n\n\nLAMVPD@USECON\nMotor vehicles & parts\nthousands\ndiff\n\n\nLAPSRVD@USECON\nPrivate service-providing\nthousands\ndiff\n\n\nLARTRDD@USECON\nRetail trade\nthousands\ndiff\n\n\nLAPBSVD@USECON\nProfessional & business services\nthousands\ndiff\n\n\nLAEDUHD@USECON\nEducation & health services\nthousands\ndiff\n\n\nLAHLTHD@USECON\nHealth care & social assistance\nthousands\ndiff\n\n\nLALEIHD@USECON\nLeisure & hospitality\nthousands\ndiff\n\n\nLAGOVTD@USECON\nGovernment\nthousands\ndiff\n\n\nLANTRMD@USECON\nMining & logging\nthousands\ndiff\n\n\nLAWTRDD@USECON\nWholesale trade\nthousands\ndiff\n\n\nLATRAND@USECON\nTransportation & warehousing\nthousands\ndiff\n\n\nLAUTILD@USECON\nUtilities\nthousands\ndiff\n\n\nLAINFOD@USECON\nInformation\nthousands\ndiff\n\n\nLAFIRED@USECON\nFinancial activities\nthousands\ndiff\n\n\nLASRVOD@USECON\nOther services\nthousands\ndiff\n\n\nLADURGD@USECON\nDurable goods manufacturing\nthousands\ndiff\n\n\nLANDURD@USECON\nNondurable goods manufacturing\nthousands\ndiff\n\n\nLAR132D@USECON\nTemporary help services\nthousands\ndiff\n\n\n\n\n\nWages\n\n\n\n\n\n\n\n\n\nCode\nLabel\nUnits\nTransform hint\n\n\n\n\nLETPRIVA@USECON\nAvg hourly earnings — total private\nUSD/hour\nlevel\n\n\nLEPRIVA@USECON\nAvg hourly earnings — production & nonsupervisory\nUSD/hour\nlevel\n\n\nLRTPRIVA@USECON\nAvg weekly hours — total private\nhours\nlevel\n\n\nLKTPRIVA@USECON\nAvg weekly earnings — total private\nUSD/week\nlevel\n\n\n\n\n\nSectoral_Wages\n\n\n\n\n\n\n\n\n\nCode\nLabel\nUnits\nTransform hint\n\n\n\n\nLEPRIVA@USECON\nAHE P&NS, total private\nUSD/hour\nlevel\n\n\nLEGOODA@USECON\nAHE P&NS, goods-producing\nUSD/hour\nlevel\n\n\nLECONSA@USECON\nAHE P&NS, construction\nUSD/hour\nlevel\n\n\nLEMANUA@USECON\nAHE P&NS, manufacturing\nUSD/hour\nlevel\n\n\nLEDURGA@USECON\nAHE P&NS, durable goods\nUSD/hour\nlevel\n\n\nLEINFOA@USECON\nAHE P&NS, information\nUSD/hour\nlevel\n\n\nLEFIREA@USECON\nAHE P&NS, financial activities\nUSD/hour\nlevel\n\n\nLEEDUHA@USECON\nAHE P&NS, education & health\nUSD/hour\nlevel\n\n\nLELEIHA@USECON\nAHE P&NS, leisure & hospitality\nUSD/hour\nlevel\n\n\n\n\n\nHousehold\n\n\n\n\n\n\n\n\n\nCode\nLabel\nUnits\nTransform hint\n\n\n\n\nLE@USECON\nCivilian employment\nthousands\ndiff\n\n\nLF@USECON\nLabor force\nthousands\ndiff\n\n\nLR@USECON\nUnemployment rate\npercent\nrate\n\n\nLRT25@USECON\nUnemployment rate, 25+\npercent\nrate\n\n\nMLU5@USECON\nU-5 unemployment rate\npercent\nrate\n\n\nMLU6@USECON\nU-6 unemployment rate\npercent\nrate\n\n\nLP@USECON\nLabor force participation rate\npercent\nrate\n\n\nLQ@USECON\nEmployment-to-population ratio\npercent\nrate\n\n\nLTU@USECON\nTotal unemployment\nthousands\nlevel\n\n\nLEPTE@USECON\nPart-time for economic reasons\nthousands\nlevel\n\n\nLEPTV@USECON\nPart-time for non-economic reasons\nthousands\nlevel\n\n\nLUJLL@USECON\nJob losers on temporary layoff\nthousands\nlevel\n\n\nLUJLPM@USECON\nPermanent job losers\nthousands\nlevel\n\n\nLHWNDN@USECON\nNot at work due to bad weather\nthousands\nlevel\n\n\nLHWSAN@USECON\nNot at work — other\nthousands\nlevel\n\n\nFA53@USECON\nLFPR, prime age (25–54)\npercent\nrate\n\n\nFA53M@USECON\nLFPR, prime age men (25–54)\npercent\nrate\n\n\nFA53F@USECON\nLFPR, prime age women (25–54)\npercent\nrate\n\n\nQA53@EMPL\nEPOP, prime age (25–54)\npercent\nrate\n\n\nLUJL@USECON\nJob losers (total)\nthousands\nlevel\n\n\nLUJLV@USECON\nJob leavers\nthousands\nlevel\n\n\nLUNE@USECON\nNew entrants\nthousands\nlevel\n\n\nLURE@USECON\nReentrants\nthousands\nlevel\n\n\n\n\n\nDuration\n\n\n\n\n\n\n\n\n\nCode\nLabel\nUnits\nTransform hint\n\n\n\n\nLU0@USECON\nUnemployed 0–4 weeks\nthousands\nlevel\n\n\nLU5@USECON\nUnemployed 5–14 weeks\nthousands\nlevel\n\n\nLU15@USECON\nUnemployed 15–26 weeks\nthousands\nlevel\n\n\nLUT15@USECON\nUnemployed 15+ weeks\nthousands\nlevel\n\n\nLUT27@USECON\nUnemployed 27+ weeks\nthousands\nlevel\n\n\nLU0P@USECON\nShare unemployed 0–4 weeks\npercent\nrate\n\n\nLU5P@USECON\nShare unemployed 5–14 weeks\npercent\nrate\n\n\nLU15P@USECON\nShare unemployed 15–26 weeks\npercent\nrate\n\n\nLUT15P@USECON\nShare unemployed 15+ weeks\npercent\nrate\n\n\nLUT27P@USECON\nShare unemployed 27+ weeks\npercent\nrate\n\n\n\n\n\nDemographic\n\n\n\n\n\n\n\n\n\nCode\nLabel\nUnits\nTransform hint\n\n\n\n\nLR16@USECON\nUnrate, 16–19\npercent\nrate\n\n\nLR200@USECON\nUnrate, 20–24\npercent\nrate\n\n\nLR25A@USECON\nUnrate, 25–34\npercent\nrate\n\n\nLR35@USECON\nUnrate, 35–44\npercent\nrate\n\n\nLR45@USECON\nUnrate, 45–54\npercent\nrate\n\n\nRA55@EMPL\nUnrate, 55+\npercent\nrate\n\n\nRA25@EMPL\nUnrate, 25+\npercent\nrate\n\n\nLRW@USECON\nUnrate, White\npercent\nrate\n\n\nLRB@USECON\nUnrate, Black\npercent\nrate\n\n\nLRH@USECON\nUnrate, Hispanic\npercent\nrate\n\n\nLRAS@USECON\nUnrate, Asian\npercent\nrate\n\n\nRAL25@EMPL\nUnrate, less than HS\npercent\nrate\n\n\nRAH25@EMPL\nUnrate, HS only\npercent\nrate\n\n\nRAS25@EMPL\nUnrate, some college\npercent\nrate\n\n\nRAB25@EMPL\nUnrate, BA+\npercent\nrate\n\n\nRN16N@EMPL\nUnrate, native-born (NSA)\npercent\nrate\n\n\nRN16R@EMPL\nUnrate, foreign-born (NSA)\npercent\nrate\n\n\n\n\n\nFlows\n\n\n\n\n\n\n\n\n\nCode\nLabel\nUnits\nTransform hint\n\n\n\n\nES16@EMPL\nEmployed → Unemployed\nthousands\nlevel\n\n\nBS16@EMPL\nUnemployed → Employed\nthousands\nlevel\n\n\nGS16@EMPL\nNILF → Unemployed\nthousands\nlevel\n\n\nJS16@EMPL\nUnemployed → NILF\nthousands\nlevel\n\n\nIS16@EMPL\nEmployed → NILF\nthousands\nlevel\n\n\nCS16@EMPL\nNILF → Employed\nthousands\nlevel\n\n\nLEFINDR@USECON\nJob-finding rate\npercent\nrate\n\n\n\n\n\nJolts\n\n\n\n\n\n\n\n\n\nCode\nLabel\nUnits\nTransform hint\n\n\n\n\nLJJTLA@USECON\nJob openings — total (level)\nthousands\nlevel\n\n\nLJJTPA@USECON\nJob openings — total (rate)\npercent\nrate\n\n\nLJHTLA@USECON\nHires — total (level)\nthousands\nlevel\n\n\nLJHTPA@USECON\nHires — total (rate)\npercent\nrate\n\n\nLJSTLA@USECON\nSeparations — total (level)\nthousands\nlevel\n\n\nLJSTPA@USECON\nSeparations — total (rate)\npercent\nrate\n\n\nLJQTLA@USECON\nQuits — total (level)\nthousands\nlevel\n\n\nLJQTPA@USECON\nQuits — total (rate)\npercent\nrate\n\n\nLJLTLA@USECON\nLayoffs & discharges — total (level)\nthousands\nlevel\n\n\nLJLTPA@USECON\nLayoffs & discharges — total (rate)\npercent\nrate\n\n\nLJJCNLA@USECON\nJob openings — construction\nthousands\nlevel\n\n\nLJJMNLA@USECON\nJob openings — manufacturing\nthousands\nlevel\n\n\nLJJRTLA@USECON\nJob openings — retail trade\nthousands\nlevel\n\n\nLJJPBLA@USECON\nJob openings — professional & business\nthousands\nlevel\n\n\nLJJEHLA@USECON\nJob openings — education & health\nthousands\nlevel\n\n\nLJJHCLA@USECON\nJob openings — health care & social\nthousands\nlevel\n\n\nLJJLHLA@USECON\nJob openings — leisure & hospitality\nthousands\nlevel\n\n\nLJJRCLA@USECON\nJob openings — arts, entertainment, recreation\nthousands\nlevel\n\n\nLJJAFLA@USECON\nJob openings — accommodation & food\nthousands\nlevel\n\n\nLJJGLA@USECON\nJob openings — government\nthousands\nlevel\n\n\nLJJGSLA@USECON\nJob openings — state & local government\nthousands\nlevel\n\n\nLJQTPPA@USECON\nQuits rate — total private\npercent\nrate\n\n\nLJQCNPA@USECON\nQuits rate — construction\npercent\nrate\n\n\nLJQMNPA@USECON\nQuits rate — manufacturing\npercent\nrate\n\n\nLJQRTPA@USECON\nQuits rate — retail trade\npercent\nrate\n\n\nLJQINPA@USECON\nQuits rate — information\npercent\nrate\n\n\nLJQFIPA@USECON\nQuits rate — financial activities\npercent\nrate\n\n\nLJQPBPA@USECON\nQuits rate — professional & business\npercent\nrate\n\n\nLJQEHPA@USECON\nQuits rate — private education & health\npercent\nrate\n\n\nLJQHCPA@USECON\nQuits rate — health care & social\npercent\nrate\n\n\nLJQLHPA@USECON\nQuits rate — leisure & hospitality\npercent\nrate\n\n\nLJQAFPA@USECON\nQuits rate — accommodation & food\npercent\nrate\n\n\nLJQGPA@USECON\nQuits rate — government\npercent\nrate"
+  },
+  {
+    "objectID": "about.html#revision-policy",
+    "href": "about.html#revision-policy",
+    "title": "About",
+    "section": "Revision policy",
+    "text": "Revision policy\nCES estimates are revised in the two months following first release and again at the annual benchmark each February. CPS is revised much less often. JOLTS levels are revised regularly — particularly the most recent two months. This dashboard always shows the latest vintage; older vintages are not preserved."
+  },
+  {
+    "objectID": "about.html#contact",
+    "href": "about.html#contact",
+    "title": "About",
+    "section": "Contact",
+    "text": "Contact\nQuestions / corrections: see the linked GitHub repo footer.\n\nSource: Haver Analytics. Joshua Bailey"
+  },
+  {
     "objectID": "raw-data.html",
     "href": "raw-data.html",
     "title": "Raw data",
@@ -61,222 +306,5 @@
     "title": "Raw data",
     "section": "JOLTS",
     "text": "JOLTS\nDownload jolts.csv\n\n\n\n\n\n\n\n\n\n\nSeries\nHaver code\nLatest\nDate\nUnits\n\n\n\n\nJob openings — total (level)\nLJJTLA@USECON\n7618\nApr 2026\nthousands\n\n\nJob openings — total (rate)\nLJJTPA@USECON\n4.6\nApr 2026\npercent\n\n\nHires — total (level)\nLJHTLA@USECON\n5116\nApr 2026\nthousands\n\n\nHires — total (rate)\nLJHTPA@USECON\n3.2\nApr 2026\npercent\n\n\nSeparations — total (level)\nLJSTLA@USECON\n4978\nApr 2026\nthousands\n\n\nSeparations — total (rate)\nLJSTPA@USECON\n3.1\nApr 2026\npercent\n\n\nQuits — total (level)\nLJQTLA@USECON\n2977\nApr 2026\nthousands\n\n\nQuits — total (rate)\nLJQTPA@USECON\n1.9\nApr 2026\npercent\n\n\nLayoffs & discharges — total (level)\nLJLTLA@USECON\n1692\nApr 2026\nthousands\n\n\nLayoffs & discharges — total (rate)\nLJLTPA@USECON\n1.1\nApr 2026\npercent\n\n\nJob openings — construction\nLJJCNLA@USECON\n259\nApr 2026\nthousands\n\n\nJob openings — manufacturing\nLJJMNLA@USECON\n474\nApr 2026\nthousands\n\n\nJob openings — retail trade\nLJJRTLA@USECON\n661\nApr 2026\nthousands\n\n\nJob openings — professional & business\nLJJPBLA@USECON\n1715\nApr 2026\nthousands\n\n\nJob openings — education & health\nLJJEHLA@USECON\n1582\nApr 2026\nthousands\n\n\nJob openings — health care & social\nLJJHCLA@USECON\n1467\nApr 2026\nthousands\n\n\nJob openings — leisure & hospitality\nLJJLHLA@USECON\n815\nApr 2026\nthousands\n\n\nJob openings — arts, entertainment, recreation\nLJJRCLA@USECON\n135\nApr 2026\nthousands\n\n\nJob openings — accommodation & food\nLJJAFLA@USECON\n679\nApr 2026\nthousands\n\n\nJob openings — government\nLJJGLA@USECON\n777\nApr 2026\nthousands\n\n\nJob openings — state & local government\nLJJGSLA@USECON\n682\nApr 2026\nthousands\n\n\nQuits rate — total private\nLJQTPPA@USECON\n2.1\nApr 2026\npercent\n\n\nQuits rate — construction\nLJQCNPA@USECON\n1.7\nApr 2026\npercent\n\n\nQuits rate — manufacturing\nLJQMNPA@USECON\n1.3\nApr 2026\npercent\n\n\nQuits rate — retail trade\nLJQRTPA@USECON\n2.7\nApr 2026\npercent\n\n\nQuits rate — information\nLJQINPA@USECON\n0.9\nApr 2026\npercent\n\n\nQuits rate — financial activities\nLJQFIPA@USECON\n1.2\nApr 2026\npercent\n\n\nQuits rate — professional & business\nLJQPBPA@USECON\n1.9\nApr 2026\npercent\n\n\nQuits rate — private education & health\nLJQEHPA@USECON\n1.8\nApr 2026\npercent\n\n\nQuits rate — health care & social\nLJQHCPA@USECON\n1.9\nApr 2026\npercent\n\n\nQuits rate — leisure & hospitality\nLJQLHPA@USECON\n3.7\nApr 2026\npercent\n\n\nQuits rate — accommodation & food\nLJQAFPA@USECON\n4\nApr 2026\npercent\n\n\nQuits rate — government\nLJQGPA@USECON\n0.8\nApr 2026\npercent"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "A standing read of the three monthly U.S. labour-market releases — Establishment Survey (CES), Household Survey (CPS), and JOLTS — that updates each release with the same set of charts, tables, and analytical framings. The aim is to put the same headline numbers, the same sectoral breakdowns, the same alternative measures, and the same diffusion / Sahm / V-U / quits-by-industry views in front of you on jobs-Friday morning. Year to year and across cycles you can compare the same picture."
-  },
-  {
-    "objectID": "about.html#what-this-dashboard-is",
-    "href": "about.html#what-this-dashboard-is",
-    "title": "About",
-    "section": "",
-    "text": "A standing read of the three monthly U.S. labour-market releases — Establishment Survey (CES), Household Survey (CPS), and JOLTS — that updates each release with the same set of charts, tables, and analytical framings. The aim is to put the same headline numbers, the same sectoral breakdowns, the same alternative measures, and the same diffusion / Sahm / V-U / quits-by-industry views in front of you on jobs-Friday morning. Year to year and across cycles you can compare the same picture."
-  },
-  {
-    "objectID": "about.html#data-source",
-    "href": "about.html#data-source",
-    "title": "About",
-    "section": "Data source",
-    "text": "Data source\nAll series are pulled from Haver Analytics. There is no FRED dependency. Each rebuild fetches every series in a single round-trip and caches the result on disk; if Haver is unreachable, the dashboard rebuilds from the cached CSV.\n\nLast data refresh: 2026-06-05T12:31:40Z\nSeries in catalogue: 127\nBundle range: 2000-01-01 → 2026-05-01\nBundle dimensions: 317 rows × 819 columns"
-  },
-  {
-    "objectID": "about.html#shutdown-gap-and-interpolation",
-    "href": "about.html#shutdown-gap-and-interpolation",
-    "title": "About",
-    "section": "Shutdown gap and interpolation",
-    "text": "Shutdown gap and interpolation\nThe September–November 2025 federal-government shutdown caused the BLS to miss the October 2025 release of the Household Survey (CPS). The Establishment Survey (CES) and JOLTS were not interrupted.\nWe searched Haver for shutdown-imputed variants of the affected codes (LR, LE, LF, LP, LQ, MLU5, MLU6, FA53, the unemployment-by-duration series, etc.) and none are published — the standard codes carry NaN for the missed month. The build pipeline therefore applies pandas time-based linear interpolation across interior gaps only, never extrapolating leading or trailing NaN. The interpolated month is logged in bundle_meta.json.\n\nSeries interpolated this build: 57.\nMonths filled: 2025-10-01, 2025-11-01."
-  },
-  {
-    "objectID": "about.html#series-catalogue",
-    "href": "about.html#series-catalogue",
-    "title": "About",
-    "section": "Series catalogue",
-    "text": "Series catalogue\nEvery Haver code currently in the build, grouped by survey:\n\n\nEstablishment\n\n\n\n\n\n\n\n\n\nCode\nLabel\nUnits\nTransform hint\n\n\n\n\nLANAGRD@USECON\nTotal nonfarm\nthousands\ndiff\n\n\nLANAGRA@USECON\nTotal nonfarm (YoY %)\npercent\nyoy_pct\n\n\nLAPRIVD@USECON\nTotal private\nthousands\ndiff\n\n\nLAGOODD@USECON\nGoods-producing\nthousands\ndiff\n\n\nLACONSD@USECON\nConstruction\nthousands\ndiff\n\n\nLAMANUD@USECON\nManufacturing\nthousands\ndiff\n\n\nLAMVPD@USECON\nMotor vehicles & parts\nthousands\ndiff\n\n\nLAPSRVD@USECON\nPrivate service-providing\nthousands\ndiff\n\n\nLARTRDD@USECON\nRetail trade\nthousands\ndiff\n\n\nLAPBSVD@USECON\nProfessional & business services\nthousands\ndiff\n\n\nLAEDUHD@USECON\nEducation & health services\nthousands\ndiff\n\n\nLAHLTHD@USECON\nHealth care & social assistance\nthousands\ndiff\n\n\nLALEIHD@USECON\nLeisure & hospitality\nthousands\ndiff\n\n\nLAGOVTD@USECON\nGovernment\nthousands\ndiff\n\n\nLANTRMD@USECON\nMining & logging\nthousands\ndiff\n\n\nLAWTRDD@USECON\nWholesale trade\nthousands\ndiff\n\n\nLATRAND@USECON\nTransportation & warehousing\nthousands\ndiff\n\n\nLAUTILD@USECON\nUtilities\nthousands\ndiff\n\n\nLAINFOD@USECON\nInformation\nthousands\ndiff\n\n\nLAFIRED@USECON\nFinancial activities\nthousands\ndiff\n\n\nLASRVOD@USECON\nOther services\nthousands\ndiff\n\n\nLADURGD@USECON\nDurable goods manufacturing\nthousands\ndiff\n\n\nLANDURD@USECON\nNondurable goods manufacturing\nthousands\ndiff\n\n\nLAR132D@USECON\nTemporary help services\nthousands\ndiff\n\n\n\n\n\nWages\n\n\n\n\n\n\n\n\n\nCode\nLabel\nUnits\nTransform hint\n\n\n\n\nLETPRIVA@USECON\nAvg hourly earnings — total private\nUSD/hour\nlevel\n\n\nLEPRIVA@USECON\nAvg hourly earnings — production & nonsupervisory\nUSD/hour\nlevel\n\n\nLRTPRIVA@USECON\nAvg weekly hours — total private\nhours\nlevel\n\n\nLKTPRIVA@USECON\nAvg weekly earnings — total private\nUSD/week\nlevel\n\n\n\n\n\nSectoral_Wages\n\n\n\n\n\n\n\n\n\nCode\nLabel\nUnits\nTransform hint\n\n\n\n\nLEPRIVA@USECON\nAHE P&NS, total private\nUSD/hour\nlevel\n\n\nLEGOODA@USECON\nAHE P&NS, goods-producing\nUSD/hour\nlevel\n\n\nLECONSA@USECON\nAHE P&NS, construction\nUSD/hour\nlevel\n\n\nLEMANUA@USECON\nAHE P&NS, manufacturing\nUSD/hour\nlevel\n\n\nLEDURGA@USECON\nAHE P&NS, durable goods\nUSD/hour\nlevel\n\n\nLEINFOA@USECON\nAHE P&NS, information\nUSD/hour\nlevel\n\n\nLEFIREA@USECON\nAHE P&NS, financial activities\nUSD/hour\nlevel\n\n\nLEEDUHA@USECON\nAHE P&NS, education & health\nUSD/hour\nlevel\n\n\nLELEIHA@USECON\nAHE P&NS, leisure & hospitality\nUSD/hour\nlevel\n\n\n\n\n\nHousehold\n\n\n\n\n\n\n\n\n\nCode\nLabel\nUnits\nTransform hint\n\n\n\n\nLE@USECON\nCivilian employment\nthousands\ndiff\n\n\nLF@USECON\nLabor force\nthousands\ndiff\n\n\nLR@USECON\nUnemployment rate\npercent\nrate\n\n\nLRT25@USECON\nUnemployment rate, 25+\npercent\nrate\n\n\nMLU5@USECON\nU-5 unemployment rate\npercent\nrate\n\n\nMLU6@USECON\nU-6 unemployment rate\npercent\nrate\n\n\nLP@USECON\nLabor force participation rate\npercent\nrate\n\n\nLQ@USECON\nEmployment-to-population ratio\npercent\nrate\n\n\nLTU@USECON\nTotal unemployment\nthousands\nlevel\n\n\nLEPTE@USECON\nPart-time for economic reasons\nthousands\nlevel\n\n\nLEPTV@USECON\nPart-time for non-economic reasons\nthousands\nlevel\n\n\nLUJLL@USECON\nJob losers on temporary layoff\nthousands\nlevel\n\n\nLUJLPM@USECON\nPermanent job losers\nthousands\nlevel\n\n\nLHWNDN@USECON\nNot at work due to bad weather\nthousands\nlevel\n\n\nLHWSAN@USECON\nNot at work — other\nthousands\nlevel\n\n\nFA53@USECON\nLFPR, prime age (25–54)\npercent\nrate\n\n\nFA53M@USECON\nLFPR, prime age men (25–54)\npercent\nrate\n\n\nFA53F@USECON\nLFPR, prime age women (25–54)\npercent\nrate\n\n\nQA53@EMPL\nEPOP, prime age (25–54)\npercent\nrate\n\n\nLUJL@USECON\nJob losers (total)\nthousands\nlevel\n\n\nLUJLV@USECON\nJob leavers\nthousands\nlevel\n\n\nLUNE@USECON\nNew entrants\nthousands\nlevel\n\n\nLURE@USECON\nReentrants\nthousands\nlevel\n\n\n\n\n\nDuration\n\n\n\n\n\n\n\n\n\nCode\nLabel\nUnits\nTransform hint\n\n\n\n\nLU0@USECON\nUnemployed 0–4 weeks\nthousands\nlevel\n\n\nLU5@USECON\nUnemployed 5–14 weeks\nthousands\nlevel\n\n\nLU15@USECON\nUnemployed 15–26 weeks\nthousands\nlevel\n\n\nLUT15@USECON\nUnemployed 15+ weeks\nthousands\nlevel\n\n\nLUT27@USECON\nUnemployed 27+ weeks\nthousands\nlevel\n\n\nLU0P@USECON\nShare unemployed 0–4 weeks\npercent\nrate\n\n\nLU5P@USECON\nShare unemployed 5–14 weeks\npercent\nrate\n\n\nLU15P@USECON\nShare unemployed 15–26 weeks\npercent\nrate\n\n\nLUT15P@USECON\nShare unemployed 15+ weeks\npercent\nrate\n\n\nLUT27P@USECON\nShare unemployed 27+ weeks\npercent\nrate\n\n\n\n\n\nDemographic\n\n\n\n\n\n\n\n\n\nCode\nLabel\nUnits\nTransform hint\n\n\n\n\nLR16@USECON\nUnrate, 16–19\npercent\nrate\n\n\nLR200@USECON\nUnrate, 20–24\npercent\nrate\n\n\nLR25A@USECON\nUnrate, 25–34\npercent\nrate\n\n\nLR35@USECON\nUnrate, 35–44\npercent\nrate\n\n\nLR45@USECON\nUnrate, 45–54\npercent\nrate\n\n\nRA55@EMPL\nUnrate, 55+\npercent\nrate\n\n\nRA25@EMPL\nUnrate, 25+\npercent\nrate\n\n\nLRW@USECON\nUnrate, White\npercent\nrate\n\n\nLRB@USECON\nUnrate, Black\npercent\nrate\n\n\nLRH@USECON\nUnrate, Hispanic\npercent\nrate\n\n\nLRAS@USECON\nUnrate, Asian\npercent\nrate\n\n\nRAL25@EMPL\nUnrate, less than HS\npercent\nrate\n\n\nRAH25@EMPL\nUnrate, HS only\npercent\nrate\n\n\nRAS25@EMPL\nUnrate, some college\npercent\nrate\n\n\nRAB25@EMPL\nUnrate, BA+\npercent\nrate\n\n\nRN16N@EMPL\nUnrate, native-born (NSA)\npercent\nrate\n\n\nRN16R@EMPL\nUnrate, foreign-born (NSA)\npercent\nrate\n\n\n\n\n\nFlows\n\n\n\n\n\n\n\n\n\nCode\nLabel\nUnits\nTransform hint\n\n\n\n\nES16@EMPL\nEmployed → Unemployed\nthousands\nlevel\n\n\nBS16@EMPL\nUnemployed → Employed\nthousands\nlevel\n\n\nGS16@EMPL\nNILF → Unemployed\nthousands\nlevel\n\n\nJS16@EMPL\nUnemployed → NILF\nthousands\nlevel\n\n\nIS16@EMPL\nEmployed → NILF\nthousands\nlevel\n\n\nCS16@EMPL\nNILF → Employed\nthousands\nlevel\n\n\nLEFINDR@USECON\nJob-finding rate\npercent\nrate\n\n\n\n\n\nJolts\n\n\n\n\n\n\n\n\n\nCode\nLabel\nUnits\nTransform hint\n\n\n\n\nLJJTLA@USECON\nJob openings — total (level)\nthousands\nlevel\n\n\nLJJTPA@USECON\nJob openings — total (rate)\npercent\nrate\n\n\nLJHTLA@USECON\nHires — total (level)\nthousands\nlevel\n\n\nLJHTPA@USECON\nHires — total (rate)\npercent\nrate\n\n\nLJSTLA@USECON\nSeparations — total (level)\nthousands\nlevel\n\n\nLJSTPA@USECON\nSeparations — total (rate)\npercent\nrate\n\n\nLJQTLA@USECON\nQuits — total (level)\nthousands\nlevel\n\n\nLJQTPA@USECON\nQuits — total (rate)\npercent\nrate\n\n\nLJLTLA@USECON\nLayoffs & discharges — total (level)\nthousands\nlevel\n\n\nLJLTPA@USECON\nLayoffs & discharges — total (rate)\npercent\nrate\n\n\nLJJCNLA@USECON\nJob openings — construction\nthousands\nlevel\n\n\nLJJMNLA@USECON\nJob openings — manufacturing\nthousands\nlevel\n\n\nLJJRTLA@USECON\nJob openings — retail trade\nthousands\nlevel\n\n\nLJJPBLA@USECON\nJob openings — professional & business\nthousands\nlevel\n\n\nLJJEHLA@USECON\nJob openings — education & health\nthousands\nlevel\n\n\nLJJHCLA@USECON\nJob openings — health care & social\nthousands\nlevel\n\n\nLJJLHLA@USECON\nJob openings — leisure & hospitality\nthousands\nlevel\n\n\nLJJRCLA@USECON\nJob openings — arts, entertainment, recreation\nthousands\nlevel\n\n\nLJJAFLA@USECON\nJob openings — accommodation & food\nthousands\nlevel\n\n\nLJJGLA@USECON\nJob openings — government\nthousands\nlevel\n\n\nLJJGSLA@USECON\nJob openings — state & local government\nthousands\nlevel\n\n\nLJQTPPA@USECON\nQuits rate — total private\npercent\nrate\n\n\nLJQCNPA@USECON\nQuits rate — construction\npercent\nrate\n\n\nLJQMNPA@USECON\nQuits rate — manufacturing\npercent\nrate\n\n\nLJQRTPA@USECON\nQuits rate — retail trade\npercent\nrate\n\n\nLJQINPA@USECON\nQuits rate — information\npercent\nrate\n\n\nLJQFIPA@USECON\nQuits rate — financial activities\npercent\nrate\n\n\nLJQPBPA@USECON\nQuits rate — professional & business\npercent\nrate\n\n\nLJQEHPA@USECON\nQuits rate — private education & health\npercent\nrate\n\n\nLJQHCPA@USECON\nQuits rate — health care & social\npercent\nrate\n\n\nLJQLHPA@USECON\nQuits rate — leisure & hospitality\npercent\nrate\n\n\nLJQAFPA@USECON\nQuits rate — accommodation & food\npercent\nrate\n\n\nLJQGPA@USECON\nQuits rate — government\npercent\nrate"
-  },
-  {
-    "objectID": "about.html#revision-policy",
-    "href": "about.html#revision-policy",
-    "title": "About",
-    "section": "Revision policy",
-    "text": "Revision policy\nCES estimates are revised in the two months following first release and again at the annual benchmark each February. CPS is revised much less often. JOLTS levels are revised regularly — particularly the most recent two months. This dashboard always shows the latest vintage; older vintages are not preserved."
-  },
-  {
-    "objectID": "about.html#contact",
-    "href": "about.html#contact",
-    "title": "About",
-    "section": "Contact",
-    "text": "Contact\nQuestions / corrections: see the linked GitHub repo footer.\n\nSource: Haver Analytics. Joshua Bailey"
-  },
-  {
-    "objectID": "wages.html",
-    "href": "wages.html",
-    "title": "Wages",
-    "section": "",
-    "text": "Average hourly earnings (AHE) is the establishment-survey wage tracker. It is not quality-adjusted — composition shifts can move it independently of any underlying wage pressure — but it is timely. The 3-month annualised view captures recent momentum; the year-on-year view smooths through monthly noise.\n\n\n\n\n\n\n\n\n\n\nFigure 1: AHE growth — toggle between 3m, 6m annualised, and YoY.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 2: All employees vs production & nonsupervisory — the latter strips out high-end compositional shifts.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 3\n\n\n\n\n\nSource: Haver Analytics. Joshua Bailey"
-  },
-  {
-    "objectID": "establishment.html",
-    "href": "establishment.html",
-    "title": "Establishment Survey",
-    "section": "",
-    "text": "The establishment (CES) survey of payroll employment was not interrupted by the 2025 federal-government shutdown — every series here has continuous monthly data through the latest release. Toggles let you switch between monthly, 3-month, and 6-month moving averages."
-  },
-  {
-    "objectID": "establishment.html#sectoral-summary",
-    "href": "establishment.html#sectoral-summary",
-    "title": "Establishment Survey",
-    "section": "Sectoral summary",
-    "text": "Sectoral summary\nThe latest reading by sector against trailing averages and pre-pandemic norms, with sectoral wage growth alongside (production & nonsupervisory AHE).\nThe table is sortable on every column (click any header). Default sort is by the largest absolute change in the latest month so the biggest movers float to the top. Use the Level column to sort back into hierarchy: 0 = total nonfarm, 1 = total private / government, 2 = major group (goods / services), 3 = industry, 4 = sub-industry. The search box filters on any field — type “Goods” or “Services” to isolate one tree.\n\n\n\nTable 1\n\n\n\n\n\n\n\n                                \n        &lt;g transform=\"translate(450 152)\"&gt;\n            &lt;polyline points=\"-15,-20 -35,-20 -35,40 25,40 25,20\" /&gt;\n            &lt;rect x=\"-15\" y=\"-40\" width=\"60\" height=\"60\" /&gt;\n        &lt;/g&gt;\n\n        &lt;g transform=\"translate(50 352)\"&gt;\n            &lt;polygon points=\"-35,-5 0,-40 35,-5\" /&gt;\n            &lt;polygon points=\"-35,10 0,45 35,10\" /&gt;\n        &lt;/g&gt;\n\n        &lt;g transform=\"translate(75 250)\"&gt;\n            &lt;polyline points=\"-30,30 -60,0 -30,-30\" /&gt;\n            &lt;polyline points=\"0,30 -30,0 0,-30\" /&gt;\n        &lt;/g&gt;\n\n        &lt;g transform=\"translate(425 250) rotate(180)\"&gt;\n            &lt;polyline points=\"-30,30 -60,0 -30,-30\" /&gt;\n            &lt;polyline points=\"0,30 -30,0 0,-30\" /&gt;\n        &lt;/g&gt;\n    &lt;/g&gt;\n&lt;/g&gt;\n\n Loading ITables v2.7.3 from the internet… (need help?)"
-  },
-  {
-    "objectID": "establishment.html#headline-payrolls",
-    "href": "establishment.html#headline-payrolls",
-    "title": "Establishment Survey",
-    "section": "Headline payrolls",
-    "text": "Headline payrolls\n\n\n\n\n\n\n\n\n\n\nFigure 1: Monthly change in total nonfarm payrolls. Use the radio to switch smoothing."
-  },
-  {
-    "objectID": "establishment.html#sectoral-contributions",
-    "href": "establishment.html#sectoral-contributions",
-    "title": "Establishment Survey",
-    "section": "Sectoral contributions",
-    "text": "Sectoral contributions\n\n\n\n\n\n\n\n\n\n\nFigure 2: Monthly change by sector since the start of 2024.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 3: Cumulative jobs added since December 2024 by sector."
-  },
-  {
-    "objectID": "establishment.html#diffusion-index",
-    "href": "establishment.html#diffusion-index",
-    "title": "Establishment Survey",
-    "section": "Diffusion index",
-    "text": "Diffusion index\nThe CES diffusion index is the share of industries adding jobs in a given month (with industries unchanged counted at half-weight). Readings above 50 indicate broad-based hiring; readings below 50 indicate the gains are concentrated.\n\n\n\n\n\n\n\n\n\n\nFigure 4: CES diffusion index — share of tracked industries adding jobs."
-  },
-  {
-    "objectID": "establishment.html#share-of-private-sector-gains",
-    "href": "establishment.html#share-of-private-sector-gains",
-    "title": "Establishment Survey",
-    "section": "Share of private-sector gains",
-    "text": "Share of private-sector gains\nA Konczal-style framing: of the cumulative private-sector jobs added since December 2024, how much has gone to health care & social assistance vs the five blue-collar sectors (mining, construction, manufacturing, transport & warehousing, utilities) vs all other private industries combined? When gains are concentrated in health care, the headline NFP number is masking weakness elsewhere.\n\n\n\n\n\n\n\n\n\n\nFigure 5"
-  },
-  {
-    "objectID": "establishment.html#blue-collar-trend-gap",
-    "href": "establishment.html#blue-collar-trend-gap",
-    "title": "Establishment Survey",
-    "section": "Blue-collar trend gap",
-    "text": "Blue-collar trend gap\nEach panel fits a linear trend through cumulative job changes from December 2022 to December 2024, then projects it forward. The dashed trend line is what hiring would look like at the 2023–24 pace; the solid line is actual. Negative gap = jobs below trend.\n\n\n\n\n\n\n\n\n\n\nFigure 6: Cumulative jobs added since 2022Q4 in five blue-collar industries vs the 2022Q4–2024Q4 trend."
-  },
-  {
-    "objectID": "establishment.html#cyclical-sensitivity-tertiles",
-    "href": "establishment.html#cyclical-sensitivity-tertiles",
-    "title": "Establishment Survey",
-    "section": "Cyclical sensitivity tertiles",
-    "text": "Cyclical sensitivity tertiles\nSectors grouped (manually, by conventional economic sensitivity) into high, medium and low cyclical buckets. Rolling 3-month averages of monthly payroll change. The high-sensitivity tertile drops first in slowdowns and recovers fastest; the low-sensitivity tertile (mostly health, education and government) is much steadier.\n\n\n\n\n\n\n\n\n\n\nFigure 7\n\n\n\n\n\nSource: Haver Analytics. Joshua Bailey"
-  },
-  {
-    "objectID": "jolts.html",
-    "href": "jolts.html",
-    "title": "JOLTS",
-    "section": "",
-    "text": "JOLTS gives the demand side of the labour market: the stock of vacancies and flows through hires, quits, and layoffs. The key tightness reads are the vacancies-to-unemployed (V/U) ratio and the quits rate — workers quit more readily when they have outside options. Both fell back toward their pre-pandemic averages over 2024–25."
-  },
-  {
-    "objectID": "jolts.html#headline-series",
-    "href": "jolts.html#headline-series",
-    "title": "JOLTS",
-    "section": "Headline series",
-    "text": "Headline series\n\n\n\n\n\n\n\n\n\n\nFigure 1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 2"
-  },
-  {
-    "objectID": "jolts.html#vacancies-to-unemployed",
-    "href": "jolts.html#vacancies-to-unemployed",
-    "title": "JOLTS",
-    "section": "Vacancies-to-unemployed",
-    "text": "Vacancies-to-unemployed\n\n\n\n\n\n\n\n\n\n\nFigure 3"
-  },
-  {
-    "objectID": "jolts.html#quits-rate-by-industry",
-    "href": "jolts.html#quits-rate-by-industry",
-    "title": "JOLTS",
-    "section": "Quits rate by industry",
-    "text": "Quits rate by industry\n\n\n\n\n\n\n\n\n\n\nFigure 4: Quits rate by industry. Y-axis is independent per facet to make trend shape readable."
-  },
-  {
-    "objectID": "jolts.html#comparison-with-pre-pandemic",
-    "href": "jolts.html#comparison-with-pre-pandemic",
-    "title": "JOLTS",
-    "section": "Comparison with pre-pandemic",
-    "text": "Comparison with pre-pandemic\n\n\n\n\n\n\n\n\n\nMetric\nLatest (%)\n2017–19 avg (%)\nDiff (pp)\n\n\n\n\n0\nOpenings rate\n4.6\n4.36\n0.24\n\n\n1\nHires rate\n3.2\n3.81\n-0.61\n\n\n2\nQuits rate\n1.9\n2.24\n-0.34\n\n\n3\nLayoffs rate\n1.1\n1.22\n-0.12\n\n\n\n\n\n\n\n\nSource: Haver Analytics. Joshua Bailey"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Jobs day overview",
-    "section": "",
-    "text": "Nonfarm payrolls\n\n\n+172\n\n\n3m avg: +188\n\n\n\n\nUnemployment rate\n\n\n4.3%\n\n\nU-6: 8.1%\n\n\n\n\nLFPR (16+)\n\n\n61.8%\n\n\nPrime age: 83.8%\n\n\n\n\nEPOP — prime age\n\n\n80.7%\n\n\n\n\nJOLTS openings\n\n\n7,618\n\n\nQuits rate: 1.9%\n\n\n\n\nSahm rule\n\n\n0.10pp\n\n\n0.50pp = recession signal"
-  },
-  {
-    "objectID": "index.html#what-changed-this-release",
-    "href": "index.html#what-changed-this-release",
-    "title": "Jobs day overview",
-    "section": "What changed this release",
-    "text": "What changed this release\n\nHeadline payrolls printed at +172 in May 2026, against a 3-month trailing average of +188. Unemployment held from 4.3% to 4.3%."
-  },
-  {
-    "objectID": "index.html#headline-charts",
-    "href": "index.html#headline-charts",
-    "title": "Jobs day overview",
-    "section": "Headline charts",
-    "text": "Headline charts\n\n\n\n\n\n\n\n\n\n\nFigure 1: Total nonfarm change with smoothing toggle.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 2: Civilian unemployment rate, 16+.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 3: Vacancies-to-unemployed ratio.\n\n\n\n\n\nSource: Haver Analytics. Joshua Bailey"
-  },
-  {
-    "objectID": "household.html",
-    "href": "household.html",
-    "title": "Household Survey",
-    "section": "",
-    "text": "Series in this section were affected by the September–November 2025 federal government shutdown: the October 2025 CPS release was missed. Those data points are linearly interpolated in the bundle so the dashboard reads continuously, but treat the imputed month with appropriate caution. See About."
-  },
-  {
-    "objectID": "household.html#headline-rates",
-    "href": "household.html#headline-rates",
-    "title": "Household Survey",
-    "section": "Headline rates",
-    "text": "Headline rates\n\n\n\n\n\n\n\n\n\n\nFigure 1: U-3, U-5 and U-6 — broader measures track labour-market slack beyond the headline unrate.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 2: Civilian unemployment rate — toggle smoothing."
-  },
-  {
-    "objectID": "household.html#participation-and-employment-to-population",
-    "href": "household.html#participation-and-employment-to-population",
-    "title": "Household Survey",
-    "section": "Participation and employment-to-population",
-    "text": "Participation and employment-to-population\nThe 25-54 (prime-age) cuts strip out cyclical effects from the entry / exit of teenagers and retirees. Dashed lines show each series’ 2019 average as a pre-pandemic baseline.\n\n\n\n\n\n\n\n\n\n\nFigure 3"
-  },
-  {
-    "objectID": "household.html#sahm-rule",
-    "href": "household.html#sahm-rule",
-    "title": "Household Survey",
-    "section": "Sahm rule",
-    "text": "Sahm rule\nThe Sahm rule (Claudia Sahm, 2019) signals the start of a recession when the 3-month moving average of the unemployment rate rises 0.5 percentage points or more above its trailing 12-month minimum. The threshold is shown in red.\n\n\n\n\n\n\n\n\n\n\nFigure 4\n\n\n\n\n\n\n\nTable 1\n\n\nLatest reading: 0.10pp — currently below the 0.5pp recession threshold."
-  },
-  {
-    "objectID": "household.html#composition-of-unemployment",
-    "href": "household.html#composition-of-unemployment",
-    "title": "Household Survey",
-    "section": "Composition of unemployment",
-    "text": "Composition of unemployment\n\n\n\n\n\n\n\n\n\n\nFigure 5: Unemployment by duration. Long-duration shares lag the cycle and are watched as a slack indicator.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 6: Decomposition of the unemployed pool by reason."
-  },
-  {
-    "objectID": "household.html#where-did-the-unemployment-rate-move",
-    "href": "household.html#where-did-the-unemployment-rate-move",
-    "title": "Household Survey",
-    "section": "Where did the unemployment rate move?",
-    "text": "Where did the unemployment rate move?\nA single-figure decomposition of the change in unrate since the December 2024 “baseline” across four demographic dimensions. Red bars = unrate up; navy = down. Comparing magnitudes across cohorts reveals whether the movement is concentrated (e.g. younger workers, less-educated, particular ethnic groups) or broad-based.\n\n\n\n\n\n\n\n\n\n\nFigure 7: Change in unemployment rate since December 2024, by age, race/ethnicity, and education.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 8\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 9\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 10\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 11: Native-born vs foreign-born unemployment, NSA so smoothed with a 6-month moving average."
-  },
-  {
-    "objectID": "household.html#labour-force-flows-bathtub",
-    "href": "household.html#labour-force-flows-bathtub",
-    "title": "Household Survey",
-    "section": "Labour-force flows (“bathtub”)",
-    "text": "Labour-force flows (“bathtub”)\nThe unemployment level changes each month as people flow into and out of the unemployment pool. There are six gross flows; here are the four that touch the U-pool directly, plus the two flows around it.\n\n\n\n\n\n\n\n\n\n\nFigure 12: Six gross labour-force flows. Monthly in grey, 3-month MA in navy.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 13\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 14: Job-finding rate — the probability an unemployed worker finds a job within the month.\n\n\n\n\n\nSource: Haver Analytics. Joshua Bailey"
   }
 ]
